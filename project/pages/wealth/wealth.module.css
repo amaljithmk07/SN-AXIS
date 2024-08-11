@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.font_playfair {
+  font-family: "Playfair Display", serif;
+}
+.font_poppins {
+  font-family: "Poppins", serif;
+}
+/* //////// */
+
+.wealth_image_body {
+  height: 540px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.wealth_image_body > span > h1 {
+  font-size: 55px;
+  color: white;
+  padding-bottom: 50px;
+  width: 100%;
+  letter-spacing: -1px;
+}
+/* ///// */
+.wealth_togglebar_container_section {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #191c40 0%,
+    #191c40 45%,
+    #ffffff 45%,
+    #fdfdfd 45%
+  );
+
+  position: relative;
+  overflow: hidden;
+}
+.wealth_togglebar_sec {
+  min-height: 60px;
+  width: 570px;
+  border-radius: 36px;
+  top: 50px;
+  left: 50%;
+  padding: 0 5px;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  border: 1px solid #b29758;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.wealth_togglebar_data,
+.wealth_togglebar_data_active {
+  min-height: 50px;
+  min-width: 20px;
+  padding: 0 35px;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 36px;
+  color: black;
+  text-decoration: none;
+  /* background-color: #b29758; */
+}
+
+.wealth_togglebar_data_active {
+  background-color: #b29758;
+  color: white;
+}
+/* ///// */
+.wealth_toggle_wealth_management_sec {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  overflow: hidden;
+  /* background-color: #a4afff96; */
+}
+.wealth_toggle_wealth_management_img_sec {
+  width: 860px;
+  /* background-color: #9fffe2; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.wealth_toggle_wealth_management_img_sec > div {
+  height: 680px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  /* background-color: blue; */
+}
+.wealth_toggle_wealth_management_img_sec > div > img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  object-fit: cover;
+}
+.wealth_toggle_wealth_management_data_sec {
+  width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: rgb(238, 221, 255); */
+}
+.wealth_toggle_wealth_management_data_title > h2 {
+  font-size: 55px;
+  width: 80%;
+  color: #b29758;
+}
+.wealth_toggle_wealth_management_data_content {
+  font-size: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+/* /// */
+.wealth_realising_wealths_section {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.wealth_realising_wealths_content {
+  width: 100%;
+  /* background-color: #b29758; */
+  display: flex;
+}
+.wealth_realising_wealths_content_title {
+  color: rgb(0, 0, 0);
+  width: 45%;
+  /* background-color: rebeccapurple ; */
+}
+.wealth_realising_wealths_content_title > h2 {
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.wealth_realising_wealths_content_card_container {
+  width: 55%;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.wealth_realising_wealths_content_card_body {
+  height: 420px;
+  width: 320px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.wealth_realising_wealths_content_card_body > img {
+  width: 100%;
+}
+.wealth_realising_wealths_content_card_body:hover {
+  background-color: #b29758;
+  color: white;
+}
+
+.wealth_realising_wealths_content_card_title {
+  font-size: 18px;
+  width: 90%;
+}
+.wealth_realising_wealths_content_card_data {
+  width: 90%;
+  font-size: 16px;
+}
+/* ////////Responsive area////////// */
+
+@media screen and (max-width: 1600px) {
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 55px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    height: unset;
+    width: 320px;
+    gap: 25px;
+    padding-bottom: 40px;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .wealth_toggle_wealth_management_sec {
+    align-items: center;
+    gap: 25px;
+  }
+  .wealth_toggle_wealth_management_img_sec > div {
+    width: 45%;
+  }
+  .wealth_toggle_wealth_management_img_sec,
+  .wealth_toggle_wealth_management_data_sec {
+    width: 50%;
+  }
+  .wealth_realising_wealths_content_title {
+    width: 40%;
+  }
+  .wealth_toggle_wealth_management_data_content {
+    font-size: 16px;
+    width: 100%;
+  }
+  .wealth_togglebar_container_section {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    height: unset;
+    width: 48%;
+    gap: 20px;
+  }
+  .wealth_realising_wealths_content_card_container {
+    width: 55%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .wealth_realising_wealths_content_card_title {
+    font-size: 17px;
+  }
+  .wealth_realising_wealths_section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .wealth_toggle_wealth_management_img_sec {
+    justify-content: space-between;
+  }
+  .wealth_toggle_wealth_management_img_sec > div {
+    height: 525px;
+    width: 47%;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .wealth_toggle_wealth_management_data_content {
+    font-size: 15px;
+    gap: 13px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    gap: 15px;
+  }
+
+  .wealth_realising_wealths_content_card_title {
+    font-size: 17px;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 39px;
+    line-height: 39px;
+  }
+  .wealth_realising_wealths_content_card_title {
+    font-size: 15px;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 13px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    gap: 10px;
+  }
+  .wealth_togglebar_container_section {
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+  .wealth_toggle_wealth_management_img_sec {
+    width: 45%;
+  }
+  .wealth_toggle_wealth_management_data_sec {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .wealth_realising_wealths_content_card_title {
+    font-size: 14px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    padding-bottom: 20px;
+  }
+  .wealth_toggle_wealth_management_img_sec > div {
+    height: 425px;
+    width: 47%;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 12px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .wealth_realising_wealths_content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wealth_realising_wealths_content_card_container {
+    width: 100%;
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    width: 32%;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .wealth_toggle_wealth_management_data_sec {
+    gap: 13px;
+  }
+  .wealth_toggle_wealth_management_sec {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .wealth_toggle_wealth_management_img_sec > div {
+    height: 380px;
+    width: 47%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wealth_realising_wealths_content_card_container {
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .wealth_toggle_wealth_management_data_sec {
+    gap: 8px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    gap: 6px;
+  }
+  .wealth_realising_wealths_content_card_title {
+    font-size: 13px;
+  }
+  .wealth_realising_wealths_section {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wealth_togglebar_container_section {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+  .wealth_toggle_wealth_management_sec {
+    gap: 25px;
+    flex-direction: column-reverse;
+  }
+  .wealth_toggle_wealth_management_img_sec,
+  .wealth_toggle_wealth_management_data_sec {
+    width: 100%;
+  }
+  .wealth_togglebar_container_section {
+    background: linear-gradient(
+      to top,
+      #191c40 0%,
+      #191c40 45%,
+      #ffffff 45%,
+      #fdfdfd 45%
+    );
+  }
+  .wealth_toggle_wealth_management_img_sec > div {
+    height: 267px;
+    width: 48%;
+  }
+  .wealth_realising_wealths_content_card_body {
+    width: 49%;
+  }
+  .wealth_toggle_wealth_management_data_content,
+  .wealth_realising_wealths_content_card_data {
+    font-size: 12px;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wealth_toggle_wealth_management_img_sec > img {
+    width: 200px;
+    height: auto;
+  }
+  .wealth_realising_wealths_content_title {
+    width: 100%;
+  }
+  .wealth_realising_wealths_content_title > h2,
+  .wealth_toggle_wealth_management_data_title > h2 {
+    font-size: 24px;
+    line-height: 31px;
+    width: 100%;
+  }
+  .wealth_realising_wealths_content_title > h2 > br,
+  .wealth_toggle_wealth_management_data_title > h2 > br {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wealth_realising_wealths_content_card_body {
+    width: 100%;
+  }
+  .wealth_togglebar_container_section {
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
+}

@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+.font_cairo{
+  font-family: "Cairo", sans-serif;
+}
+.font_playfair {
+  font-family: "Playfair Display", "Cairo";
+}
+.font_poppins {
+  font-family: "Poppins", "Cairo";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.container {
+  width: 100%;
+  max-width: 1289px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: -32.5% !important;
+  bottom: 10% !important;
+}
+.swiper-pagination-bullet {
+  height: 5px !important;
+  width: 5px !important;
+  border: 3px solid white !important;
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.swiper-pagination-bullet-active {
+  height: 5px !important;
+  width: 5px !important;
+  border: 3px solid white !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  font-family: "playfair Display", "Cairo", serif;
+
+  padding: 0;
+  line-height: normal;
+  min-height: 20px;
+}
+
+.togglebar_sec {
+  min-height: 60px;
+  width: 570px;
+  border-radius: 36px;
+  top: 50px;
+  left: 50%;
+  padding: 0 5px;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  border: 1px solid #b29758;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  font-family: "Poppins", 'Cairo';
+}
+.togglebar_data,
+.togglebar_data_active {
+  min-height: 50px;
+  min-width: 20px;
+  padding: 0 35px;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 36px;
+  color: black;
+  text-decoration: none;
+  /* background-color: #b29758; */
+}
+
+.togglebar_data_active {
+  background-color: #b29758;
+  color: white;
+}
+
+.image_body {
+  height: 540px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Playfair Display", 'Cairo';
+}
+
+.image_body > span > h1 {
+  font-size: 55px;
+  color: white;
+  padding-bottom: 50px;
+  width: 100%;
+  letter-spacing: -1px;
+}
+.img_res{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* //////////////////////////////////// */
+@media screen and (max-width: 1600px) {
+  .swiper-pagination {
+    position: absolute;
+    left: -38% !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+  .togglebar_sec {
+    min-height: 55px;
+    width: 540px;
+    padding: 0 3px;
+    top: 45px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .image_body > span > h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .image_body {
+    height: 500px;
+  }
+  .togglebar_sec {
+    min-height: 55px;
+    width: 475px;
+    padding: 0 3px;
+    top: 38px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    font-size: 15px;
+    padding: 0px 20px;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .image_body > span > h1 {
+    font-size: 35px;
+  }
+  .image_body {
+    height: 400px;
+  }
+  .swiper-pagination {
+    left: 0% !important;
+  }
+  .togglebar_sec {
+    min-height: unset;
+    width: 434px;
+    padding: 3px 3px;
+    top: 30px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    min-height: 43px;
+    font-size: 14px;
+    padding: 0px 20px;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .image_body {
+    height: 350px;
+  }
+  .togglebar_sec {
+    min-height: unset;
+    width: 380px;
+    top: 25px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    min-height: 40px;
+    font-size: 12px;
+    /* background-color: rebeccapurple; */
+  }
+}
+@media screen and (max-width: 768px) {
+  .image_body {
+    height: 325px;
+  }
+
+  .image_body > span > h1 {
+    font-size: 30px;
+  }
+  .togglebar_sec {
+    min-height: unset;
+    width: 346px;
+    top: 19px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    min-height: 37px;
+    font-size: 12px;
+    padding: 0px 15px;
+  }
+  .swiper-pagination {
+    left: 0% !important;
+  }
+  .swiper-pagination-bullet-active,
+  .swiper-pagination-bullet {
+    height: 3px !important;
+    width: 3px !important;
+    border: 2px solid white !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .togglebar_sec {
+    min-height: unset;
+    width: 315px;
+  }
+  .togglebar_data,
+  .togglebar_data_active {
+    min-height: 35px;
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+  .wealth_realising_wealths_content_card_body {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .image_body {
+    height: 300px;
+  }
+  .image_body > span > h1 {
+    font-size: 22px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .togglebar_sec {
+    min-height: unset;
+    width: 90%;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .togglebar_data,
+  .togglebar_data_active {
+    padding: 0px 7px;
+  }
+}

@@ -1,0 +1,1136 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+.font_playfair {
+  font-family: "Playfair Display",  'Cairo';
+}
+
+/* ////////// */
+
+/* ////////// */
+.main_container {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  font-family: "Poppins", 'Cairo';
+  overflow-x: hidden;
+}
+
+.main_discovery_legacy_section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main_discovery_legacy_title_sec {
+  min-height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+  gap: 20px;
+
+  font-size: 16px;
+  font-family: "Poppins",  'Cairo';
+}
+
+.main_discovery_legacy_title h1 {
+  font-size: 65px;
+}
+
+/* ////////// */
+
+.main_pioneering_excellence_section {
+  min-height: 165px;
+  width: 100%;
+
+  /* background-color: rgb(230, 35, 35); */
+}
+.main_pioneering_excellence_container {
+  min-height: 165px;
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  /* background-color: rgb(255, 232, 232); */
+}
+
+.main_pioneering_excellence_title {
+  width: 40%;
+}
+.main_pioneering_excellence_title > h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -2px;
+}
+
+.main_pioneering_excellence_paragraph {
+  /* background-color: red; */
+  width: 514px;
+  min-height: 266px;
+  display: flex;
+  line-height: 25px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+}
+
+/* /////// */
+
+.main_area_of_focus_section {
+  min-height: 1048px;
+  width: 100%;
+  background-color: #191c40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 90px 0 50px 0; */
+  gap: 50px;
+}
+
+.main_area_of_focus_title_sec > h2 {
+  min-height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  line-height: 60px;
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  font-size: 55px;
+  align-items: center;
+  padding-bottom: 15px;
+  /* font-family:  'Cairo'; */
+  border-bottom: 2px solid #b29758;
+}
+
+.main_area_of_focus_card_sec {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: rgb(245, 245, 245); */
+}
+
+.main_area_of_focus_card_body {
+  /* height: 638px; */
+  width: 640px;
+  /* background-color: rgb(223, 150, 150); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* flex-shrink: 0; */
+}
+
+.main_area_of_focus_card_img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_area_of_focus_card_body:hover .main_area_of_focus_card_img {
+  transform: scale(1.05);
+}
+
+.main_area_of_focus_card_title {
+  font-size: 40px;
+  min-height: 30px;
+  width: 85%;
+  /* background-color: red; */
+  color: white;
+  line-height: 35px;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_arrow_icon {
+  height: 16px;
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.main_area_of_focus_card_arrow_btn {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_area_of_focus_card_body:hover .main_area_of_focus_card_arrow_btn {
+  background-color: #b29758;
+}
+
+.main_area_of_focus_card_body:hover .right_arrow_icon {
+  filter: invert(1);
+}
+
+/* /// */
+.main_news_and_insight_section {
+  min-height: 830px;
+  width: 100%;
+}
+.main_news_and_insight_container_section {
+  min-height: 830px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: rgb(151, 51, 51); */
+}
+
+.main_news_and_insight_title {
+  min-height: 100px;
+  width: 100%;
+  line-height: 60px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+  /* font-family:  'Cairo'; */
+  border-bottom: 2px solid #b29758;
+}
+.main_news_and_insight_title > h2 {
+  font-size: 55px;
+}
+
+.main_news_and_insight_card_btn_sec {
+  min-height: 500px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+  position: relative;
+}
+
+.main_news_and_insight_card_previous_btn {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  /* left: -90px; */
+  left: -5%;
+  border: 0;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main_news_and_insight_card_previous_btn > img {
+  transform: rotate(180deg);
+}
+
+.main_news_and_insight_card_next_btn {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  /* right: -90px; */
+  right: -5%;
+  border: 0;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main_news_and_insight_card_previous_btn > img,
+.main_news_and_insight_card_next_btn > img {
+  height: 16px;
+  width: 18px;
+}
+
+.main_news_and_insight_card_previous_btn:hover,
+.main_news_and_insight_card_next_btn:hover {
+  background-color: #b29758;
+}
+
+.main_news_and_insight_card_previous_btn:hover > img,
+.main_news_and_insight_card_next_btn:hover > img {
+  filter: invert(1);
+}
+
+.main_news_and_insight_card_container {
+  min-height: 390px;
+  /* width: 1300px; */
+  width: 100%;
+  /* background-color: #191c40; */
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_news_and_insight_card {
+  max-width: 419px;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.main_news_and_insight_card:hover .main_news_and_insight_card_img {
+  transform: scale(1.08);
+}
+
+.main_news_and_insight_card_img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_news_and_insight_card_date {
+  top: 30px;
+  height: 21px;
+  width: 92px;
+  border-radius: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  left: 30px;
+  z-index: 1;
+  color: #525252;
+  background-color: rgb(255, 255, 255);
+}
+
+.main_news_and_insight_card_data {
+  font-size: 13px;
+  min-height: 100px;
+  width: 80%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 30px;
+  left: 30px;
+  color: #d6d6d6;
+}
+
+.main_news_and_insight_card_data > div > img {
+  filter: invert(1);
+  height: 12px;
+  width: 12px;
+}
+
+.main_news_and_insight_btn {
+  height: 54px;
+  width: 188px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #444444;
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_news_and_insight_btn:hover {
+  border: 1px solid #b29758;
+  color: white;
+}
+
+.main_news_and_insight_btn_background {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 55px;
+  width: 0px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  background-color: #b29758;
+}
+
+.main_news_and_insight_btn:hover .main_news_and_insight_btn_background {
+  width: 190px;
+}
+
+.main_news_and_insight_btn > span {
+  z-index: 1;
+}
+
+.main_news_and_insight_btn > img {
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+}
+
+.main_news_and_insight_btn:hover > img {
+  filter: invert(1);
+}
+
+/* //// */
+.main_choose_the_right_investment_section {
+  height: 450px;
+  width: 100%;
+  padding-top: 50px;
+  background-image: url("/images/choose-the-right.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main_choose_the_right_investment_title_sec {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main_choose_the_right_investment_title > h2 {
+  font-size: 55px;
+  line-height: 60px;
+  min-height: 20px;
+  letter-spacing: -1.5px;
+}
+
+.main_choose_the_right_investment_paragraph {
+  font-size: 16px;
+  line-height: 25px;
+  min-height: 20px;
+}
+
+/* ///Responsive Area//// */
+
+@media screen and (max-width: 1600px) {
+  .main_discovery_legacy_title > h1 {
+    font-size: 55px;
+  }
+
+  .main_pioneering_excellence_title {
+    font-size: 50px;
+  }
+
+  .main_pioneering_excellence_paragraph {
+    width: 50%;
+  }
+
+  .main_area_of_focus_section {
+    min-height: 70vh;
+    padding: 100px 0%;
+    width: 100%;
+  }
+
+  .main_area_of_focus_title_sec {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .main_area_of_focus_card_sec {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main_area_of_focus_card_title {
+    font-size: 30px;
+  }
+
+  /*  */
+
+  .main_news_and_insight_title {
+    font-size: 45px;
+  }
+
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  .main_news_and_insight_section {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 0%;
+  }
+
+  .main_news_and_insight_card_container {
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* .main_news_and_insight_card {
+    height: 350px;
+    max-width: 400px;
+  } */
+
+  .main_news_and_insight_card_date {
+    top: 8%;
+    font-size: 12px;
+    left: 7%;
+  }
+  .main_news_and_insight_card_data {
+    font-size: 12px;
+    left: 7%;
+  }
+
+  .main_news_and_insight_btn {
+    height: 50px;
+    width: 170px;
+  }
+
+  /*  */
+  .main_choose_the_right_investment_section {
+    height: 430px;
+  }
+
+  .main_choose_the_right_investment_title {
+    font-size: 45px;
+  }
+
+  .main_choose_the_right_investment_paragraph {
+    font-size: 15px;
+  }
+
+  /* .main_choose_the_right_investment_title_sec {
+    padding-left: 10%;
+  } */
+}
+
+@media screen and (max-width: 1440px) {
+  .main_discovery_legacy_title {
+    font-size: 45px;
+  }
+
+  .main_discovery_legacy_sub_title {
+    font-size: 14px;
+  }
+  .main_pioneering_excellence_container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .main_pioneering_excellence_section {
+    width: 100%;
+    /* padding: 90px 10%; */
+  }
+
+  .main_pioneering_excellence_title {
+    font-size: 45px;
+    line-height: 50px;
+    min-height: 89px;
+    width: 100%;
+  }
+
+  .main_pioneering_excellence_paragraph {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 206px;
+    font-size: 15px;
+  }
+
+  .main_area_of_focus_section {
+    width: 100%;
+  }
+  .main_area_of_focus_card_sec {
+    width: 80%;
+  }
+  .main_area_of_focus_card_body {
+    width: 33.5%;
+    height: 400px;
+  }
+  .main_area_of_focus_title_sec {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .main_area_of_focus_card_title {
+    font-size: 25px;
+  }
+
+  .main_area_of_focus_card_arrow_btn {
+    height: 35px;
+    width: 35px;
+  }
+
+  .right_arrow_icon {
+    height: 13px;
+    width: 17px;
+  }
+
+  /*  */
+
+  .main_news_and_insight_section {
+    min-height: 830px;
+    width: 100%;
+    padding: 30px 0%;
+  }
+
+  .main_news_and_insight_title {
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main_area_of_focus_section {
+    padding: 5% 0%;
+  }
+
+  .main_area_of_focus_card_body {
+    height: 370px;
+    width: 33%;
+  }
+
+  .main_area_of_focus_card_title {
+    bottom: 7%;
+    font-size: 21px;
+  }
+
+  .main_area_of_focus_card_arrow_btn {
+    height: 37px;
+    width: 37px;
+  }
+  .main_news_and_insight_container_section {
+    min-height: 630px;
+  }
+  .main_news_and_insight_card_container {
+    width: 97%;
+  }
+  .main_news_and_insight_section {
+    min-height: 530px;
+    padding: 5% 0%;
+  }
+
+  .main_news_and_insight_title {
+    font-size: 35px;
+  }
+
+  .main_news_and_insight_card_date {
+    font-size: 11px;
+  }
+
+  .main_news_and_insight_card_data {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main_discovery_legacy_section {
+    height: 90vh;
+  }
+  .main_discovery_legacy_title_sec {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .main_discovery_legacy_title > h1 {
+    font-size: 42px;
+    line-height: 45px;
+  }
+  .main_pioneering_excellence_title {
+    font-size: 45px;
+    min-height: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .main_pioneering_excellence_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .main_pioneering_excellence_title > h2 {
+    gap: 5px;
+    font-size: 45px;
+    line-height: normal;
+  }
+  .main_pioneering_excellence_paragraph {
+    min-height: 100px;
+    font-size: 13px;
+  }
+  .main_area_of_focus_section {
+    min-height: 55vh;
+  }
+  .main_area_of_focus_title_sec > h2 {
+    min-height: 60px;
+    line-height: 45px;
+    font-size: 45px;
+    padding-bottom: 10px;
+  }
+
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 40px;
+    width: 40px;
+  }
+  .main_area_of_focus_section {
+    gap: 40px;
+  }
+  .main_area_of_focus_card_sec {
+    min-height: 300px;
+  }
+  .main_area_of_focus_card_body {
+    min-height: 300px;
+  }
+
+  .main_area_of_focus_card_title {
+    font-size: 18px;
+  }
+  .main_area_of_focus_card_sec {
+    width: 100%;
+  }
+
+  .main_area_of_focus_card_arrow_btn {
+    height: 32px;
+    width: 32px;
+  }
+  .right_arrow_icon {
+    height: 13px;
+    width: 15px;
+  }
+  /*  */
+  .main_news_and_insight_title > h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .main_news_and_insight_card_btn_sec {
+    min-height: 400px;
+    width: 96%;
+  }
+  .main_news_and_insight_container_section {
+    min-height: 530px;
+  }
+
+  .main_news_and_insight_card_container {
+    min-height: 250px;
+  }
+  .main_news_and_insight_section {
+    min-height: 400px;
+    padding: 2% 0%;
+  }
+  .main_news_and_insight_card_data {
+    font-size: 11px;
+  }
+  .main_news_and_insight_btn {
+    height: 45px;
+    width: 150px;
+  }
+  .main_news_and_insight_btn_background {
+    left: -10px;
+    width: 0px;
+  }
+  .main_news_and_insight_btn:hover .main_news_and_insight_btn_background {
+    width: 170px;
+  }
+  .main_choose_the_right_investment_section {
+    height: 350px;
+  }
+  .main_choose_the_right_investment_title > h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main_discovery_legacy_section {
+    height: 75vh;
+  }
+  .main_discovery_legacy_title > h1 {
+    font-size: 38px;
+  }
+  .main_discovery_legacy_title_sec {
+    font-size: 14px;
+  }
+  .main_pioneering_excellence_title > h2 {
+    font-size: 38px;
+  }
+  .main_pioneering_excellence_paragraph {
+    font-size: 12px;
+  }
+  .main_area_of_focus_section {
+    min-height: 30vh;
+  }
+  .main_area_of_focus_title_sec > h2 {
+    line-height: 42px;
+    font-size: 38px;
+  }
+  .main_choose_the_right_investment_section {
+    height: 290px;
+  }
+  .main_choose_the_right_investment_title > h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .main_choose_the_right_investment_paragraph {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .main_area_of_focus_card_title {
+    font-size: 16px;
+  }
+  .main_area_of_focus_section {
+    gap: 25px;
+  }
+  .main_area_of_focus_card_body {
+    height: 230px;
+  }
+  .main_area_of_focus_card_sec {
+    width: 100%;
+  }
+
+  .main_area_of_focus_card_title {
+    font-size: 16px;
+  }
+  .main_news_and_insight_section {
+    padding: 3% 0%;
+  }
+  .main_area_of_focus_card_arrow_btn {
+    height: 25px;
+    width: 25px;
+  }
+  .main_news_and_insight_container_section {
+    min-height: 300px;
+  }
+  .main_news_and_insight_title > h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .main_news_and_insight_card_btn_sec {
+    min-height: 250px;
+    gap: 25px;
+  }
+  .main_news_and_insight_card_container {
+    min-height: 250px;
+  }
+
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 40px;
+    width: 40px;
+  }
+  .main_news_and_insight_btn > span {
+    z-index: 1;
+    font-size: 12px;
+  }
+
+  .main_news_and_insight_card_date {
+    top: 25px;
+    height: 17px;
+    width: 80px;
+    font-size: 10px;
+  }
+
+  .main_news_and_insight_card_data {
+    font-size: 10px;
+    bottom: 5%;
+  }
+  .main_choose_the_right_investment_title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_discovery_legacy_section {
+    height: 65vh;
+  }
+  .main_discovery_legacy_title {
+    font-size: 39px;
+  }
+  .main_pioneering_excellence_container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .main_news_and_insight_container_section {
+    min-height: 60px;
+  }
+  .main_news_and_insight_card_btn_sec {
+    gap: 20px;
+  }
+  .main_news_and_insight_section {
+    min-height: 400px;
+  }
+  .main_news_and_insight_card_container {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main_discovery_legacy_title_sec {
+    width: 80%;
+    gap: 7px;
+  }
+  .main_discovery_legacy_section {
+    height: 65vh;
+  }
+  .main_discovery_legacy_title > h1 {
+    font-size: 30px;
+  }
+  .main_discovery_legacy_title_sec {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .main_news_and_insight_card_container {
+    width: 60%;
+  }
+  .main_discovery_legacy_title_sec {
+    min-height: 200px;
+    width: 80%;
+    gap: 0px;
+  }
+  .main_discovery_legacy_section {
+    height: 50vh;
+  }
+  .main_discovery_legacy_title > h1 {
+    font-size: 25px;
+  }
+  .main_discovery_legacy_title_sec {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .main_pioneering_excellence_container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main_pioneering_excellence_title {
+    min-height: 10px;
+  }
+  .main_pioneering_excellence_title > h2 {
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    gap: 5px;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+  }
+  .main_pioneering_excellence_paragraph {
+    gap: 7px;
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .main_area_of_focus_section {
+    min-height: 55vh;
+    gap: 10px;
+  }
+  .main_area_of_focus_card_sec {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main_area_of_focus_card_body {
+    height: 350px;
+    width: 60%;
+  }
+  .main_area_of_focus_title_sec > h2 {
+    font-size: 25px;
+    line-height: normal;
+    min-height: 60px;
+  }
+  .main_news_and_insight_title > h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .main_news_and_insight_card_container {
+    width: 80%;
+  }
+  .main_news_and_insight_card_btn_sec {
+    gap: 5px;
+  }
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 30px;
+    width: 30px;
+  }
+  .main_news_and_insight_card_previous_btn > img,
+  .main_news_and_insight_card_next_btn > img {
+    height: 13px;
+    width: 13px;
+  }
+  .main_news_and_insight_btn {
+    width: 110px;
+    height: 30px;
+  }
+  .main_news_and_insight_btn > img {
+    height: 10px;
+    width: 10px;
+  }
+  .main_news_and_insight_btn > span {
+    font-size: 10px;
+  }
+  .main_news_and_insight_btn:hover .main_news_and_insight_btn_background {
+    width: 120px;
+    left: -10px;
+    height: 30px;
+  }
+  .main_news_and_insight_card_data {
+    font-size: 12px;
+    bottom: 6%;
+  }
+  .main_choose_the_right_investment_section {
+    height: 173px;
+    padding-top: 10px;
+  }
+  .main_choose_the_right_investment_title > h2 {
+    font-size: 23px;
+    letter-spacing: 0px;
+    line-height: 25px;
+  }
+  .main_choose_the_right_investment_title_sec {
+    gap: 10px;
+  }
+  .main_choose_the_right_investment_paragraph {
+    font-size: 11px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main_discovery_legacy_title_sec {
+    min-height: 200px;
+    width: 300px;
+    gap: 7px;
+  }
+  .main_discovery_legacy_section {
+    height: 45vh;
+  }
+  .main_discovery_legacy_title > h1 {
+    font-size: 24px;
+  }
+  .main_discovery_legacy_title_sec {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .main_pioneering_excellence_container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main_pioneering_excellence_title {
+    min-height: 59px;
+  }
+  .main_pioneering_excellence_title > h2 {
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    gap: 5px;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+  }
+  .main_pioneering_excellence_paragraph {
+    gap: 8px;
+    font-size: 11px;
+    line-height: normal;
+  }
+
+  .main_area_of_focus_title_sec > h2 {
+    font-size: 24px;
+    line-height: normal;
+    min-height: 60px;
+  }
+  .main_area_of_focus_section {
+    min-height: 55vh;
+    gap: 10px;
+  }
+  .main_area_of_focus_card_sec {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main_area_of_focus_card_body {
+    min-height: 200px;
+    width: 80%;
+  }
+  .main_news_and_insight_title > h2 {
+    font-size: 24px;
+    line-height: normal;
+    min-height: 20px;
+  }
+  .main_news_and_insight_card_container {
+    width: 80%;
+  }
+  .main_news_and_insight_card_btn_sec {
+    gap: 5px;
+  }
+  .main_news_and_insight_card_previous_btn,
+  .main_news_and_insight_card_next_btn {
+    height: 30px;
+    width: 30px;
+  }
+  .main_news_and_insight_card_previous_btn > img,
+  .main_news_and_insight_card_next_btn > img {
+    height: 13px;
+    width: 13px;
+  }
+  .main_news_and_insight_btn {
+    width: 110px;
+    height: 30px;
+  }
+  .main_news_and_insight_btn > img {
+    height: 10px;
+    width: 10px;
+  }
+  .main_news_and_insight_btn > span {
+    font-size: 10px;
+  }
+  .main_news_and_insight_btn:hover .main_news_and_insight_btn_background {
+    width: 120px;
+    left: -10px;
+    height: 30px;
+  }
+  .main_choose_the_right_investment_section {
+    height: 173px;
+    padding-top: 10px;
+  }
+  .main_choose_the_right_investment_title > h2 {
+    font-size: 23px;
+    letter-spacing: 0px;
+    line-height: 25px;
+  }
+  .main_choose_the_right_investment_title_sec {
+    gap: 10px;
+  }
+  .main_choose_the_right_investment_paragraph {
+    font-size: 11px;
+    line-height: normal;
+  }
+}

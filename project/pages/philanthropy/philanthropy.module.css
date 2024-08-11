@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+.font_cairo{
+  font-family: "Cairo", sans-serif;
+}
+.font_playfair {
+  font-family: "Playfair Display", "Cairo";
+}
+.font_poppins {
+  font-family: "Poppins", "Cairo";
+}
+/* //////// */
+.philanthropy_main_body {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* // */
+
+.philanthropy_togglebar_container_section {
+  width: 100%;
+  /* background-color: rgb(241, 26, 26); */
+  position: relative;
+  overflow: hidden;
+}
+/* //// */
+
+.philanthropy_toggle_sec {
+  width: 100%;
+  margin-top: 180px;
+  margin-bottom: 150px;
+  /* background-color: red; */
+}
+.philanthropy_toggle_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #ffffff 44%,
+    #191c40 44%,
+    #191c40 100%
+  );
+}
+.philanthropy_toggle_data_sec {
+  /* background-color: red; */
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 120px 0;
+  gap: 30px;
+  color: #ffffff;
+}
+.philanthropy_toggle_data_title {
+  width: 60%;
+}
+.philanthropy_toggle_data_title > h2 {
+  font-size: 30px;
+}
+.philanthropy_toggle_data_content {
+  font-size: 16px;
+  width: 80%;
+  line-height: 25px;
+}
+.philanthropy_toggle_img_sec {
+  height: 550px;
+  width: 45%;
+}
+.philanthropy_toggle_img_sec > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ////////// */
+
+.philanthropy_empowering_generation_section {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.philanthropy_empowering_generation_content {
+  /* width: 1290px; */
+  width: 100%;
+  /* background-color: #191c40; */
+  gap: 50px;
+  justify-content: center;
+  display: flex;
+}
+.philanthropy_empowering_generation_content_title {
+  color: rgb(0, 0, 0);
+  width: 45%;
+  /* background-color: red; */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.philanthropy_empowering_generation_content_title > h2 {
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+.philanthropy_empowering_generation_content_title > span {
+  width: 90%;
+  /* background-color: rebeccapurple; */
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.philanthropy_empowering_generation_content_card_container {
+  height: 100%;
+  width: 55%;
+  /* background-color: aqua; */
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.philanthropy_empowering_generation_content_card_body {
+  width: 320px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.philanthropy_empowering_generation_content_card_body > img {
+  width: 100%;
+}
+.philanthropy_empowering_generation_content_card_body:hover {
+  background-color: #b29758;
+  color: white;
+}
+
+.philanthropy_empowering_generation_content_card_title {
+  font-size: 18px;
+  width: 90%;
+}
+.philanthropy_empowering_generation_content_card_data {
+  width: 90%;
+  font-size: 16px;
+}
+
+/* ////////Responsive area */
+
+@media screen and (max-width: 1600px) {
+  .philanthropy_toggle_sec {
+    margin-top: 160px;
+    margin-bottom: 90px;
+  }
+  .philanthropy_toggle_img_sec {
+    height: 500px;
+    width: 45%;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 39px;
+    line-height: 50px;
+    letter-spacing: -1px;
+  }
+  .philanthropy_empowering_generation_content_card_body {
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  .philanthropy_toggle_data_sec {
+    width: 45%;
+    padding: 70px 0;
+  }
+  .philanthropy_toggle_data_content {
+    width: 80%;
+  }
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 25px;
+  }
+  .philanthropy_empowering_generation_section {
+    padding-bottom: 75px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .philanthropy_empowering_generation_content_title > span,
+  .philanthropy_empowering_generation_content_card_data,
+  .philanthropy_toggle_data_content {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .philanthropy_empowering_generation_content {
+    width: 100%;
+    gap: 0px;
+  }
+  .philanthropy_toggle_sec {
+    margin-top: 150px;
+    margin-bottom: 90px;
+  }
+  .philanthropy_empowering_generation_content_card_body {
+    width: 48%;
+    padding-bottom: 20px;
+    gap: 15px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .philanthropy_empowering_generation_content_card_title {
+    font-size: 15px;
+  }
+  .philanthropy_empowering_generation_content_title > span,
+  .philanthropy_empowering_generation_content_card_data,
+  .philanthropy_toggle_data_content {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .philanthropy_toggle_sec {
+    margin-top: 150px;
+    margin-bottom: 65px;
+  }
+  .philanthropy_empowering_generation_section {
+    padding-bottom: 50px;
+  }
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 24px;
+  }
+  .philanthropy_toggle_data_sec {
+    gap: 20px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 27px;
+    line-height: 31px;
+  }
+  .philanthropy_empowering_generation_content_title > span,
+  .philanthropy_empowering_generation_content_card_data,
+  .philanthropy_toggle_data_content {
+    font-size: 13px;
+  }
+  .philanthropy_toggle_img_sec {
+    height: 425px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .philanthropy_empowering_generation_content_card_body {
+    gap: 10px;
+  }
+  .philanthropy_empowering_generation_content_card_title {
+    font-size: 14px;
+  }
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 22px;
+  }
+  .philanthropy_toggle_sec {
+    margin-top: 135px;
+    margin-bottom: 65px;
+  }
+  .philanthropy_empowering_generation_content_card_container {
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .philanthropy_toggle_sec {
+    margin-top: 115px;
+    margin-bottom: 50px;
+  }
+  .philanthropy_toggle_data_title {
+    width: 85%;
+  }
+  .philanthropy_toggle_data_content {
+    width: 90%;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .philanthropy_toggle_img_sec {
+    height: 375px;
+    width: 45%;
+  }
+  .philanthropy_toggle_data_sec {
+    width: 50%;
+    padding: 0;
+  }
+  .philanthropy_toggle_sec {
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+  .philanthropy_empowering_generation_section {
+    padding-bottom: 25px;
+  }
+  .philanthropy_empowering_generation_content_title {
+    gap: 10px;
+  }
+  .philanthropy_empowering_generation_content_title > span,
+  .philanthropy_empowering_generation_content_card_data,
+  .philanthropy_toggle_data_content {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .philanthropy_empowering_generation_content_card_body {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .philanthropy_toggle_img_sec {
+    height: 320px;
+    width: 45%;
+  }
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 21px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: 0px;
+  }
+  .philanthropy_empowering_generation_content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .philanthropy_empowering_generation_content_title,
+  .philanthropy_empowering_generation_content_card_container {
+    gap: 10px;
+    width: 100%;
+  }
+  .philanthropy_empowering_generation_content_card_body {
+    width: 32%;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0px;
+  }
+  .philanthropy_toggle_data_sec {
+    gap: 10px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 > br {
+    display: none;
+  }
+  .philanthropy_empowering_generation_content_title > span,
+  .philanthropy_empowering_generation_content_card_data,
+  .philanthropy_toggle_data_content {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .philanthropy_toggle_sec {
+    margin-top: 85px;
+    margin-bottom: 25px;
+  }
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .philanthropy_toggle_container {
+    flex-direction: column-reverse;
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 44%,
+      #191c40 44%,
+      #191c40 100%
+    );
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .philanthropy_toggle_data_sec {
+    width: 88%;
+  }
+  .philanthropy_toggle_img_sec {
+    height: 282px;
+    width: 88%;
+  }
+  .philanthropy_empowering_generation_content_card_body {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .philanthropy_toggle_data_title > h2 {
+    font-size: 18px;
+  }
+  .philanthropy_empowering_generation_content_title > h2 {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .philanthropy_empowering_generation_content_card_body {
+    width: 100%;
+  }
+}

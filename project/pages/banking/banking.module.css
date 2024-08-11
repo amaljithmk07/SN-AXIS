@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+.font_playfair {
+  font-family: "Playfair Display", "Cairo";
+}
+
+.font_poppins {
+  font-family: "Poppins", "Cairo";
+}
+
+/* //////// */
+.banking_main_body {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ///// */
+.banking_togglebar_container_section {
+  width: 100%;
+  /* background-color: rgb(197, 17, 17); */
+  position: relative;
+  overflow: hidden;
+}
+
+/* ///// */
+.banking_toggle_sec {
+  width: 100%;
+  padding-top: 200px;
+  display: flex;
+  /* background-color: #ffa0b5; */
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.banking_toggle_container {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 45%,
+    #191c40 45%,
+    #191c40 100%
+  );
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banking_toggle_img_sec {
+  height: 550px;
+  width: 50%;
+}
+.banking_toggle_img_sec > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banking_toggle_data_sec {
+  width: 50%;
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  color: #ffffff;
+}
+
+.banking_toggle_data_title > h2 {
+  font-size: 30px;
+  width: 80%;
+}
+
+.banking_toggle_data_content {
+  font-size: 16px;
+  width: 70%;
+  color: #d6d6d6;
+  font-weight: 300;
+  line-height: 25px;
+  /* background-color: red; */
+}
+
+/* ////////////////// */
+
+.banking_realising_wealth_section {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: #ff0000; */
+}
+
+.banking_realising_wealth_title {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  color: #191c40;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+  /* font-family: "Cairo"; */
+  border-bottom: 2px solid #b29758;
+}
+.banking_realising_wealth_title > h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.banking_realising_wealth_card_container {
+  /* width: 1300px; */
+  width: 100%;
+  /* background-color: #191c40; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banking_realising_wealth_card {
+  width: 32%;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.banking_realising_wealth_card:hover .banking_realising_wealth_card_img > img {
+  filter: brightness(0.4);
+}
+
+.banking_realising_wealth_card_img {
+  height: 100%;
+  width: 100%;
+}
+.banking_realising_wealth_card_img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.banking_realising_wealth_card_paragraph {
+  width: 80%;
+  position: absolute;
+  font-size: 22px;
+  bottom: 20px;
+  left: 30px;
+  color: #d6d6d6;
+  font-family: "Playfair Display", "Cairo";
+}
+
+.banking_realising_wealth_card_paragraph > p {
+  display: none;
+  font-family: "Poppins", "Cairo";
+  font-size: 14px;
+  transition: all 1s ease-in-out;
+}
+
+.banking_realising_wealth_card:hover
+  .banking_realising_wealth_card_paragraph
+  > p {
+  display: flex;
+}
+
+/* ////Responsive area */
+
+@media screen and (max-width: 1600px) {
+  .banking_toggle_sec {
+    padding-top: 170px;
+  }
+  .banking_realising_wealth_section {
+    padding-top: 55px;
+    padding-bottom: 90px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .banking_toggle_sec {
+    padding-top: 150px;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .banking_realising_wealth_section {
+    padding-top: 55px;
+    padding-bottom: 65px;
+    gap: 30px;
+  }
+  .banking_toggle_data_content {
+    font-size: 15px;
+    width: 80%;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .banking_realising_wealth_title > h2 {
+    font-size: 31px;
+    line-height: 42px;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .banking_toggle_data_content {
+    font-size: 14px;
+    width: 80%;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 19px;
+    bottom: 6%;
+    display: flex;
+    gap: 5px;
+    left: 7%;
+    flex-direction: column;
+  }
+  .banking_toggle_img_sec {
+    height: 515px;
+    width: 50%;
+  }
+  .banking_realising_wealth_section {
+    padding-top: 35px;
+    padding-bottom: 55px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .banking_toggle_sec {
+    padding-top: 140px;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .banking_toggle_data_sec {
+    gap: 20px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 18px;
+  }
+  .banking_realising_wealth_card_paragraph > p {
+    font-size: 13px;
+  }
+  .banking_realising_wealth_section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banking_toggle_sec {
+    padding-top: 115px;
+  }
+  .banking_toggle_img_sec {
+    height: 425px;
+    width: 50%;
+  }
+  .banking_toggle_data_content {
+    font-size: 13px;
+    width: 95%;
+    line-height: 22px;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .banking_toggle_sec {
+    padding-top: 95px;
+  }
+  .banking_toggle_img_sec {
+    height: 400px;
+    width: 50%;
+  }
+  .banking_toggle_data_sec {
+    gap: 10px;
+  }
+  .banking_toggle_data_content > br {
+    display: none;
+  }
+  .banking_realising_wealth_card_paragraph > p {
+    font-size: 12px;
+  }
+  .banking_realising_wealth_section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 20px;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 15px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .banking_toggle_data_title > h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .banking_toggle_data_content {
+    font-size: 12px;
+    width: 95%;
+    line-height: 20px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 14px;
+  }
+  .banking_realising_wealth_card_paragraph > p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banking_toggle_sec {
+    padding-top: 85px;
+  }
+  .banking_toggle_img_sec {
+    height: 350px;
+    width: 50%;
+  }
+  .banking_toggle_data_title > h2 > br {
+    display: none;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 15px;
+    line-height: 19px;
+    width: 80%;
+  }
+  .banking_toggle_data_content {
+    font-size: 11px;
+    width: 95%;
+    line-height: 19px;
+  }
+  .banking_realising_wealth_title > h2 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banking_toggle_container {
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 45%,
+      #191c40 45%,
+      #191c40 100%
+    );
+    padding-bottom: 30px;
+  }
+  .banking_toggle_img_sec {
+    height: 250px;
+    width: 90%;
+  }
+  .banking_toggle_data_sec {
+    width: 90%;
+    padding-left: 0%;
+  }
+  .banking_toggle_data_title > h2 {
+    font-size: 15px;
+    line-height: 19px;
+    width: 102%;
+  }
+  .banking_toggle_data_content {
+    font-size: 11px;
+    width: 100%;
+    line-height: 19px;
+  }
+  .banking_realising_wealth_card {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banking_realising_wealth_card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banking_realising_wealth_title > h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .banking_realising_wealth_title > h2 > br {
+    display: none;
+  }
+}

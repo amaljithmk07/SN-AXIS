@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import about from "./about.module.css";
+// import about from "./about.module.css";
+import about from "@/styles/about.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

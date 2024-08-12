@@ -1,5 +1,5 @@
 import React from "react";
-import newsAndInsights from "./NewsAndInsights.module.css";
+import newsAndInsights from "@/styles/NewsAndInsights.module.css";
 import Link from "next/link";
 import Image from "next/image";
 const Index = () => {
@@ -38,8 +38,8 @@ const Index = () => {
             /> */}
             <Image
               height={18}
-              width={18}                 alt=""
-
+              width={18}
+              alt=""
               src="/images/search-icon.png"
               className={
                 newsAndInsights.news_and_insights_content_section_searchbar_icon
@@ -61,8 +61,8 @@ const Index = () => {
             /> */}
             <Image
               height={9}
-              width={18}                alt=""
-
+              width={18}
+              alt=""
               src="/images/dropdown-arrow.png"
               className={
                 newsAndInsights.news_and_insights_content_section_dropdown_icon

@@ -1,5 +1,5 @@
 import React from "react";
-import careers from "./careers.module.css";
+import careers from "@/styles/careers.module.css";
 import Link from "next/link";
 import Image from "next/image";
 const Index = () => {
@@ -235,8 +235,8 @@ const Index = () => {
             /> */}
             <Image
               height={24}
-              width={24}                alt=""
-
+              width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -246,14 +246,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image                 alt=""
- height={20} width={20} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image                 alt=""
- height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>

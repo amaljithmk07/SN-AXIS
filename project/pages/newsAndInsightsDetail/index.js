@@ -1,5 +1,5 @@
 import React from "react";
-import newsAndInsights from "./NewsAndInsightsDetail.module.css";
+import newsAndInsights from "@/styles/NewsAndInsightsDetail.module.css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 

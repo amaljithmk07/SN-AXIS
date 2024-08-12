@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "./navbar.module.css";
+// import Navbar from "./navbar.module.css";
+import Navbar from "@/styles/navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import careersdetails from "./careersdetails.module.css";
+import careersdetails from "@/styles/careersdetails.module.css";
 import Image from "next/image";
 const Index = () => {
   const [fileHandler, setFileHandler] = useState();
@@ -46,8 +46,12 @@ const Index = () => {
                 }
               >
                 {/* <img src="/images/location.png" />  */}
-                <Image                 alt=""
- height={25} width={25} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={25}
+                  width={25}
+                  src="/images/location.png"
+                />
                 Dubai ,UAE
               </div>
               <div
@@ -56,8 +60,7 @@ const Index = () => {
                 }
               >
                 {/* <img src="/images/clock.png" /> */}
-                <Image                 alt=""
- height={25} width={25} src="/images/clock.png" />
+                <Image alt="" height={25} width={25} src="/images/clock.png" />
                 Full Time
               </div>
               <div
@@ -66,8 +69,12 @@ const Index = () => {
                 }
               >
                 {/* <img src="/images/position.png" /> */}
-                <Image                 alt=""
- height={25} width={25} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={25}
+                  width={25}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import wealth from "./wealth.module.css";
+import wealth from "@/styles/wealth.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Featured from "../featuredInsights";

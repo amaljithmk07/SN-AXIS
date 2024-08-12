@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import banking from "./banking.module.css";
+import banking from "@/styles/banking.module.css";
 import Featured from "../featuredInsights";
 import AOS from "aos";
 import "aos/dist/aos.css";

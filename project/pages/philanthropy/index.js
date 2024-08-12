@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import philanthropy from "./philanthropy.module.css";
+import philanthropy from "@/styles/philanthropy.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Featured from "../featuredInsights";

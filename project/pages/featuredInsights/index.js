@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import featuredInsights from "./featuredInsights.module.css";
+import featuredInsights from "@/styles/featuredInsights.module.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

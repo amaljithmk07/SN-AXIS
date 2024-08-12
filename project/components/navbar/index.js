@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Navbar from "./navbar.module.css";
 import Navbar from "@/styles/navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
+  console.log(lang);
+
   const [dropdown, setDropdown] = useState(false);
   const DropDownHandler = (e) => {
     // e.preventDefault();
@@ -26,7 +35,7 @@ const Index = () => {
       <header className={Navbar.navbar_main_body}>
         {/* //////// */}
 
-        <div className={`${Navbar.top_nav}  `}>
+        <div className={Navbar.top_nav}>
           <div className={`${Navbar.top_nav_container} container `}>
             <span>Phone : +971 123 1234</span>
             <span>Email : snaxis@example.com</span>

@@ -1,5 +1,6 @@
 import React from "react";
 import contact from "./contact.module.css";
+import Image from "next/image";
 const Index = () => {
   return (
     <div>
@@ -13,9 +14,7 @@ const Index = () => {
       </div>
       {/* // */}
       <div className={`${contact.contact_detail_content_body} container `}>
-        <div
-          className={`${contact.contact_detail_path_sec}  font_playfair`}
-        >
+        <div className={`${contact.contact_detail_path_sec}  font_playfair`}>
           Connect{" "}
         </div>
         <div className={contact.contact_detail_content_section}>
@@ -23,18 +22,23 @@ const Index = () => {
             <div className={contact.contact_detail_content_sec_left_title}>
               Get In Touch
               <span>
-                Have a question or need assistance? We're here to help!
+                Have a question or need assistance? We &apos; re here to help!
               </span>
             </div>
             <div className={contact.contact_detail_content_sec_left_data}>
-              <img src="/images/mail.png" />
+              {/* <img src="/images/mail.png" /> */}
+              <Image height={20} width={25} alt="" src="/images/mail.png" />
               info@snaxis.com
             </div>
             <div className={contact.contact_detail_content_sec_left_data}>
-              <img src="/images/location.png" /> Dubai – UAE
+              {/* <img src="/images/location.png" />  */}
+              <Image height={25} width={25} alt="" src="/images/location.png" />
+              Dubai – UAE
             </div>
             <div className={contact.contact_detail_content_sec_left_data}>
-              <img src="/images/call.png" /> +971 4 413 06 19
+              {/* <img src="/images/call.png" /> */}
+              <Image height={25} width={25} alt="" src="/images/call.png" />
+              +971 4 413 06 19
             </div>
           </div>
 

@@ -47,7 +47,8 @@ const Index = () => {
               <Image
                 data-aos="fade-right"
                 height={550}
-                width={400}
+                width={400}                alt=""
+
                 src="/images/banking-img.png"
               />
             </div>
@@ -126,7 +127,8 @@ const Index = () => {
               {/* <img src="/images/banking-realising-wealth-img2.png" /> */}
               <Image
                 height={300}
-                width={300}
+                width={300}                alt=""
+
                 src="/images/banking-realising-wealth-img2.png"
               />
             </div>
@@ -146,7 +148,8 @@ const Index = () => {
               {/* <img src="/images/banking-realising-wealth-img3.png" /> */}
               <Image
                 height={300}
-                width={300}
+                width={300}                alt=""
+
                 src="/images/banking-realising-wealth-img3.png"
               />
             </div>

@@ -31,6 +31,7 @@ const Index = () => {
             <Image
               height={24}
               width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -40,12 +41,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image
+                  height={20}
+                  width={20}
+                  alt=""
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>
@@ -61,6 +72,7 @@ const Index = () => {
             <Image
               height={24}
               width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -70,12 +82,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>
@@ -91,6 +113,7 @@ const Index = () => {
             <Image
               height={24}
               width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -100,12 +123,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>
@@ -121,6 +154,7 @@ const Index = () => {
             <Image
               height={24}
               width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -130,12 +164,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>
@@ -151,6 +195,7 @@ const Index = () => {
             <Image
               height={24}
               width={24}
+              alt=""
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -160,12 +205,22 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/location.png"
+                />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image
+                  alt=""
+                  height={20}
+                  width={20}
+                  src="/images/position.png"
+                />
                 Posted Today
               </div>
             </div>
@@ -180,7 +235,8 @@ const Index = () => {
             /> */}
             <Image
               height={24}
-              width={24}
+              width={24}                alt=""
+
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -190,12 +246,14 @@ const Index = () => {
               <div>
                 {" "}
                 {/* <img src="/images/location.png" />  */}
-                <Image height={20} width={20} src="/images/location.png" />
+                <Image                 alt=""
+ height={20} width={20} src="/images/location.png" />
                 Dubai
               </div>
               <div>
                 {/* <img src="/images/position.png" />  */}
-                <Image height={20} width={20} src="/images/position.png" />
+                <Image                 alt=""
+ height={20} width={20} src="/images/position.png" />
                 Posted Today
               </div>
             </div>

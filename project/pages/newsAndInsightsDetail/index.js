@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
+import Image from "next/image";
 const Index = () => {
   return (
     <div>
@@ -27,7 +28,9 @@ const Index = () => {
         <div
           className={`${newsAndInsights.news_and_insights_detail_path_sec}  font_playfair`}
         >
-          News Insights <img src="/images/path-icon.png" /> Category
+          News Insights{" "}
+          <Image alt="" height={13} width={8} src="/images/path-icon.png" />{" "}
+          Category
         </div>
         <div
           className={newsAndInsights.news_and_insights_detail_content_section}
@@ -37,7 +40,13 @@ const Index = () => {
               newsAndInsights.news_and_insights_detail_content_section_img
             }
           >
-            <img src="/images/news-insights-detail.png" />
+            {/* <img src="/images/news-insights-detail.png" /> */}
+            <Image
+              alt=""
+              height={400}
+              width={900}
+              src="/images/news-insights-detail.png"
+            />
           </div>
           <div className={newsAndInsights.news_and_insights_detail_content}>
             <span>
@@ -45,10 +54,10 @@ const Index = () => {
             </span>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
+              industry. Lorem Ipsum has been the industry &apos; s standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It
+              has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop
@@ -107,7 +116,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/news-insight-1.png"
+                      alt=""
+                      className={
+                        newsAndInsights.news_and_insights_detail_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={500}
+                      width={500}
                       src="/images/news-insight-1.png"
                       alt=""
                       className={
@@ -125,7 +143,13 @@ const Index = () => {
                         industry.{" "}
                       </div>
                       <span>
-                        Read more <img src="/images/right-arrow.png" alt="" />
+                        Read more{" "}
+                        <Image
+                          height={10}
+                          width={5}
+                          src="/images/right-arrow.png"
+                          alt=""
+                        />
                       </span>
                     </div>
                   </Link>
@@ -143,7 +167,9 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    <Image
+                      height={500}
+                      width={500}
                       src="/images/news-insight-2.png"
                       alt=""
                       className={
@@ -161,7 +187,13 @@ const Index = () => {
                         industry.{" "}
                       </div>
                       <span>
-                        Read more <img src="/images/right-arrow.png" alt="" />
+                        Read more{" "}
+                        <Image
+                          height={10}
+                          width={5}
+                          src="/images/right-arrow.png"
+                          alt=""
+                        />
                       </span>
                     </div>
                   </Link>
@@ -180,7 +212,9 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    <Image
+                      height={500}
+                      width={500}
                       src="/images/news-insight-1.png"
                       alt=""
                       className={
@@ -198,7 +232,13 @@ const Index = () => {
                         industry.{" "}
                       </div>
                       <span>
-                        Read more <img src="/images/right-arrow.png" alt="" />
+                        Read more{" "}
+                        <Image
+                          height={10}
+                          width={5}
+                          src="/images/right-arrow.png"
+                          alt=""
+                        />
                       </span>
                     </div>
                   </Link>
@@ -216,7 +256,9 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    <Image
+                      height={500}
+                      width={500}
                       src="/images/news-insight-3.png"
                       alt=""
                       className={
@@ -234,7 +276,13 @@ const Index = () => {
                         industry.{" "}
                       </div>
                       <span>
-                        Read more <img src="/images/right-arrow.png" alt="" />
+                        Read more{" "}
+                        <Image
+                          height={10}
+                          width={5}
+                          src="/images/right-arrow.png"
+                          alt=""
+                        />
                       </span>
                     </div>
                   </Link>
@@ -252,7 +300,9 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    <Image
+                      height={500}
+                      width={500}
                       src="/images/news-insight-1.png"
                       alt=""
                       className={
@@ -270,7 +320,13 @@ const Index = () => {
                         industry.{" "}
                       </div>
                       <span>
-                        Read more <img src="/images/right-arrow.png" alt="" />
+                        Read more{" "}
+                        <Image
+                          height={10}
+                          width={5}
+                          src="/images/right-arrow.png"
+                          alt=""
+                        />
                       </span>
                     </div>
                   </Link>

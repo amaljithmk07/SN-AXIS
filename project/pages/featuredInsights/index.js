@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 const Index = () => {
   return (
@@ -25,9 +26,8 @@ const Index = () => {
           >
             {" "}
             <h2>
-
-            Featured <br />
-            Insights
+              Featured <br />
+              Insights
             </h2>
           </div>
           <div
@@ -72,7 +72,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/featured-insight-img2.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img2.png"
                       alt=""
                       className={
@@ -105,7 +114,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/featured-insight-img3.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img3.png"
                       alt=""
                       className={
@@ -138,7 +156,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/featured-insight-img1.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img1.png"
                       alt=""
                       className={
@@ -172,7 +199,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/featured-insight-img2.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img2.png"
                       alt=""
                       className={
@@ -205,7 +241,16 @@ const Index = () => {
                       26-07-2024
                     </div>
 
-                    <img
+                    {/* <img
+                      src="/images/featured-insight-img3.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img3.png"
                       alt=""
                       className={
@@ -237,8 +282,18 @@ const Index = () => {
                     >
                       26-07-2024
                     </div>
-
+                    {/* 
                     <img
+                      src="/images/featured-insight-img1.png"
+                      alt=""
+                      className={
+                        featuredInsights.wealth_featured_insight_card_img
+                      }
+                    /> */}
+
+                    <Image
+                      height={300}
+                      width={200}
                       src="/images/featured-insight-img1.png"
                       alt=""
                       className={
@@ -267,7 +322,14 @@ const Index = () => {
                 }
                 id="prev_btn"
               >
-                <img
+                {/* <img
+                  src="/images/right-arrow.png"
+                  alt=""
+                  className={featuredInsights.right_arrow_icon}
+                /> */}
+                <Image
+                  height={30}
+                  width={20}
                   src="/images/right-arrow.png"
                   alt=""
                   className={featuredInsights.right_arrow_icon}
@@ -279,21 +341,36 @@ const Index = () => {
                 }
                 id="next_btn"
               >
-                <img
+                {/* <img
+                  src="/images/right-arrow.png"
+                  alt=""
+                  className={featuredInsights.right_arrow_icon}
+                /> */}
+                <Image
+                  height={30}
+                  width={20}
                   src="/images/right-arrow.png"
                   alt=""
                   className={featuredInsights.right_arrow_icon}
                 />
               </button>
             </div>
-            <button className={`${featuredInsights.wealth_featured_insight_btn} font_poppins`}>
+            <button
+              className={`${featuredInsights.wealth_featured_insight_btn} font_poppins`}
+            >
               <div
                 className={
                   featuredInsights.wealth_featured_insight_btn_background
                 }
               ></div>
               <span> VIEW ALL </span>
-              <img src="/images/right-arrow.png" alt="" />
+              {/* <img src="/images/right-arrow.png" alt="" /> */}
+              <Image
+                height={13}
+                width={15}
+                src="/images/right-arrow.png"
+                alt=""
+              />
             </button>
             {/* /// */}
           </div>

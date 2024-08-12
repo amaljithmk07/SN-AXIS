@@ -1,6 +1,7 @@
 import React from "react";
 import newsAndInsights from "./NewsAndInsights.module.css";
 import Link from "next/link";
+import Image from "next/image";
 const Index = () => {
   return (
     <div>
@@ -29,7 +30,16 @@ const Index = () => {
             }
           >
             <input placeholder="Search..." type="text" />
-            <img
+            {/* <img
+              src="/images/search-icon.png"
+              className={
+                newsAndInsights.news_and_insights_content_section_searchbar_icon
+              }
+            /> */}
+            <Image
+              height={18}
+              width={18}                 alt=""
+
               src="/images/search-icon.png"
               className={
                 newsAndInsights.news_and_insights_content_section_searchbar_icon
@@ -43,7 +53,16 @@ const Index = () => {
             }
           >
             In The News{" "}
-            <img
+            {/* <img
+              src="/images/dropdown-arrow.png"
+              className={
+                newsAndInsights.news_and_insights_content_section_dropdown_icon
+              }
+            /> */}
+            <Image
+              height={9}
+              width={18}                alt=""
+
               src="/images/dropdown-arrow.png"
               className={
                 newsAndInsights.news_and_insights_content_section_dropdown_icon
@@ -63,7 +82,14 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            {/* <img
+              src="/images/news-insight-1.png"
+              alt=""
+              className={newsAndInsights.news_and_insights_insight_card_img}
+            /> */}
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-1.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -87,7 +113,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-2.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -111,7 +139,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-3.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -135,7 +165,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-4.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -159,7 +191,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-5.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -183,7 +217,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-6.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -207,7 +243,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-1.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -231,7 +269,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-2.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -255,7 +295,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-3.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -279,7 +321,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-4.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -303,7 +347,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-5.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}
@@ -327,7 +373,9 @@ const Index = () => {
               26-07-2024
             </div>
 
-            <img
+            <Image
+              height={300}
+              width={300}
               src="/images/news-insight-6.png"
               alt=""
               className={newsAndInsights.news_and_insights_insight_card_img}

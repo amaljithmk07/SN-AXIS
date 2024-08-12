@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Featured from "../featuredInsights";
 import Link from "next/link";
+import Image from "next/image";
 
 const Index = () => {
   useEffect(() => {
@@ -46,14 +47,23 @@ const Index = () => {
             data-aos="fade-right"
           >
             <div>
-              <img
+              {/* <img
                 src="/images/wealth-invest-management-1.png"
-                // src="/images/wealth-management.jpg"
+                data-aos="fade-right"
+              /> */}
+              <Image
+                height={680}
+                width={320}
+                alt=""
+                src="/images/wealth-invest-management-1.png"
                 data-aos="fade-right"
               />
             </div>
             <div>
-              <img
+              <Image
+                height={680}
+                width={320}
+                alt=""
                 src="/images/wealth-invest-management.png"
                 data-aos="fade-right"
               />
@@ -113,7 +123,12 @@ const Index = () => {
               className={`${wealth.wealth_realising_wealths_content_card_body}  font_poppins`}
             >
               {" "}
-              <img src="/images/realising-wealth-img1.png" />
+              <Image
+                height={250}
+                width={320}
+                alt=""
+                src="/images/realising-wealth-img1.png"
+              />
               <div
                 className={wealth.wealth_realising_wealths_content_card_title}
               >
@@ -128,7 +143,12 @@ const Index = () => {
             <div
               className={`${wealth.wealth_realising_wealths_content_card_body}  font_poppins`}
             >
-              <img src="/images/realising-wealth-img2.png" />
+              <Image
+                height={250}
+                width={320}
+                alt=""
+                src="/images/realising-wealth-img2.png"
+              />
               <div
                 className={wealth.wealth_realising_wealths_content_card_title}
               >
@@ -143,7 +163,12 @@ const Index = () => {
             <div
               className={`${wealth.wealth_realising_wealths_content_card_body}  font_poppins`}
             >
-              <img src="/images/realising-wealth-img3.png" />
+              <Image
+                height={250}
+                width={320}
+                alt=""
+                src="/images/realising-wealth-img3.png"
+              />
               <div
                 className={wealth.wealth_realising_wealths_content_card_title}
               >

@@ -139,11 +139,6 @@ export default function page() {
                       className="img_res"
                     />
                   </div>
-                  {/* <img
-                    src="/images/right-arrow.png"
-                    alt=""
-                    className={style.right_arrow_icon}
-                  /> */}
                 </Link>{" "}
               </div>
             </div>
@@ -170,11 +165,15 @@ export default function page() {
                   href={"/banking"}
                   className={style.main_area_of_focus_card_arrow_btn}
                 >
-                  <img
-                    src="/images/right-arrow.png"
-                    alt=""
-                    className={style.right_arrow_icon}
-                  />
+                  <div className={style.right_arrow_icon}>
+                    <Image
+                      src="/images/right-arrow.png"
+                      alt="Right Arrow image"
+                      height={16}
+                      width={20}
+                      className="img_res"
+                    />
+                  </div>
                 </Link>{" "}
               </div>
             </div>
@@ -191,7 +190,7 @@ export default function page() {
                 className="img_res"
                 width={638}
                 objectFit="cover"
-              />eret
+              />
               <div
                 className={`${style.main_area_of_focus_card_title}  font_playfair`}
               >
@@ -201,11 +200,15 @@ export default function page() {
                   href={"/philanthropy"}
                   className={style.main_area_of_focus_card_arrow_btn}
                 >
-                  <img
-                    src="/images/right-arrow.png"
-                    alt=""
-                    className={style.right_arrow_icon}
-                  />
+                  <div className={style.right_arrow_icon}>
+                    <Image
+                      src="/images/right-arrow.png"
+                      alt="Right Arrow image"
+                      height={16}
+                      width={20}
+                      className="img_res"
+                    />
+                  </div>
                 </Link>{" "}
               </div>
             </div>
@@ -273,7 +276,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -284,9 +293,11 @@ export default function page() {
                         26-07-2024
                       </div>
 
-                      <img
+                      <Image
+                        alt="news"
+                        height={900}
+                        width={900}
                         src="/images/news-insight-3.png"
-                        alt=""
                         className={style.main_news_and_insight_card_img}
                       />
                       <div className={style.main_news_and_insight_card_data}>
@@ -296,7 +307,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -307,9 +324,11 @@ export default function page() {
                         26-07-2024
                       </div>
 
-                      <img
+                      <Image
+                        alt="news"
+                        height={900}
+                        width={900}
                         src="/images/news-insight-1.png"
-                        alt=""
                         className={style.main_news_and_insight_card_img}
                       />
                       <div className={style.main_news_and_insight_card_data}>
@@ -319,7 +338,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -330,9 +355,11 @@ export default function page() {
                         26-07-2024
                       </div>
 
-                      <img
+                      <Image
+                        alt="news"
+                        height={900}
+                        width={900}
                         src="/images/news-insight-2.png"
-                        alt=""
                         className={style.main_news_and_insight_card_img}
                       />
                       <div className={style.main_news_and_insight_card_data}>
@@ -342,7 +369,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -353,9 +386,11 @@ export default function page() {
                         26-07-2024
                       </div>
 
-                      <img
+                      <Image
+                        alt="news"
+                        height={900}
+                        width={900}
                         src="/images/news-insight-3.png"
-                        alt=""
                         className={style.main_news_and_insight_card_img}
                       />
                       <div className={style.main_news_and_insight_card_data}>
@@ -365,7 +400,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -376,9 +417,11 @@ export default function page() {
                         26-07-2024
                       </div>
 
-                      <img
+                      <Image
+                        alt="news"
+                        height={900}
+                        width={900}
                         src="/images/news-insight-1.png"
-                        alt=""
                         className={style.main_news_and_insight_card_img}
                       />
                       <div className={style.main_news_and_insight_card_data}>
@@ -388,7 +431,13 @@ export default function page() {
                           industry.{" "}
                         </div>
                         <div>
-                          Read more <img src="/images/right-arrow.png" alt="" />
+                          Read more{" "}
+                          <Image
+                            height={12}
+                            width={12}
+                            src="/images/right-arrow.png"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -399,7 +448,9 @@ export default function page() {
                   className={style.main_news_and_insight_card_previous_btn}
                   id="next_btn"
                 >
-                  <img
+                  <Image
+                    height={20}
+                    width={15}
                     src="/images/right-arrow.png"
                     alt=""
                     className={style.right_arrow_icon}
@@ -409,7 +460,9 @@ export default function page() {
                   className={style.main_news_and_insight_card_next_btn}
                   id="previous_btn"
                 >
-                  <img
+                  <Image
+                    height={20}
+                    width={15}
                     src="/images/right-arrow.png"
                     alt=""
                     className={style.right_arrow_icon}
@@ -424,7 +477,12 @@ export default function page() {
                   className={style.main_news_and_insight_btn_background}
                 ></div>
                 <span> View All News</span>
-                <img src="/images/right-arrow.png" alt="" />
+                <Image
+                  height={15}
+                  width={15}
+                  src="/images/right-arrow.png"
+                  alt=""
+                />
               </Link>
               {/* /// */}
             </div>

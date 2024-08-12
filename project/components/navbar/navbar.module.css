@@ -410,6 +410,7 @@
 
   .navbar_logo {
     height: 70px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -432,6 +433,7 @@
 
   .navbar_logo {
     height: 57px;
+    width: 70px;
   }
   .navbar_hamb_main {
     height: 37px;

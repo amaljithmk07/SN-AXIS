@@ -169,6 +169,7 @@ const Index = () => {
                     <Image
                       height={18}
                       width={20}
+                      alt=""
                       src="/images/btn-right-arrow.png"
                     />
                   </button>
@@ -180,13 +181,21 @@ const Index = () => {
                     <Image
                       height={18}
                       width={20}
+                      alt=""
                       src="/images/btn-right-arrow.png"
                     />
                   </button>
                 </div>
               </div>
               <div className={about.about_our_mission_img_body}>
-                <img data-aos="fade-left" src={ourMission.image} />
+                {/* <img data-aos="fade-left" src={ourMission.image} /> */}
+                <Image
+                  height={900}
+                  width={600}
+                  alt=""
+                  data-aos="fade-left"
+                  src={ourMission.image}
+                />
               </div>
             </div>
           </div>
@@ -405,14 +414,24 @@ const Index = () => {
                 onClick={() => historyHandler("left")}
               >
                 {/* <img src="/images/btn-arrow.png" /> */}
-                <Image src={"/images/btn-arrow.png"} height={15} width={10} />
+                <Image
+                  alt=""
+                  src={"/images/btn-arrow.png"}
+                  height={15}
+                  width={10}
+                />
               </button>
               <button
                 className={about.about_our_history_btn}
                 id="next_btn"
                 onClick={() => historyHandler("right")}
               >
-                <Image src={"/images/btn-arrow.png"} height={15} width={10} />{" "}
+                <Image
+                  alt=""
+                  src={"/images/btn-arrow.png"}
+                  height={15}
+                  width={10}
+                />{" "}
               </button>
             </div>
           </div>

@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Featured from "../featuredInsights";
 import Link from "next/link";
+import Image from "next/image";
 
 const Index = () => {
   useEffect(() => {
@@ -40,9 +41,7 @@ const Index = () => {
         {/* /// */}
 
         <div className={philanthropy.philanthropy_toggle_sec}>
-          <div
-            className={`${philanthropy.philanthropy_toggle_container} `}
-          >
+          <div className={`${philanthropy.philanthropy_toggle_container} `}>
             <div
               className={philanthropy.philanthropy_toggle_data_sec}
               data-aos="fade-right"
@@ -67,7 +66,14 @@ const Index = () => {
               </div>
             </div>
             <div className={philanthropy.philanthropy_toggle_img_sec}>
-              <img
+              {/* <img
+                data-aos="fade-left"
+                src="/images/philanthropy-content.png"
+              /> */}
+              <Image
+                height={550}
+                width={900}                 alt=""
+
                 data-aos="fade-left"
                 src="/images/philanthropy-content.png"
               />
@@ -103,7 +109,12 @@ const Index = () => {
               className={`${philanthropy.philanthropy_empowering_generation_content_card_body}  font_poppins`}
             >
               {" "}
-              <img src="/images/philanthropy-empowering-generation-img1.png" />
+              <Image
+                height={220}
+                width={320}                 alt=""
+
+                src="/images/philanthropy-empowering-generation-img1.png"
+              />
               <div
                 className={
                   philanthropy.philanthropy_empowering_generation_content_card_title
@@ -122,7 +133,12 @@ const Index = () => {
             <div
               className={`${philanthropy.philanthropy_empowering_generation_content_card_body}  font_poppins`}
             >
-              <img src="/images/philanthropy-empowering-generation-img2.png" />
+              <Image
+                height={220}
+                width={320}                 alt=""
+
+                src="/images/philanthropy-empowering-generation-img2.png"
+              />
               <div
                 className={
                   philanthropy.philanthropy_empowering_generation_content_card_title
@@ -141,7 +157,12 @@ const Index = () => {
             <div
               className={`${philanthropy.philanthropy_empowering_generation_content_card_body}  font_poppins`}
             >
-              <img src="/images/philanthropy-empowering-generation-img3.png" />
+              <Image
+                height={220}
+                width={320}                 alt=""
+
+                src="/images/philanthropy-empowering-generation-img3.png"
+              />
               <div
                 className={
                   philanthropy.philanthropy_empowering_generation_content_card_title

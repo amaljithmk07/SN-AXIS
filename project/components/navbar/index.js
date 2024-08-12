@@ -58,7 +58,9 @@ const Index = () => {
                 <li className={Navbar.drop_down_sec} onClick={DropDownHandler}>
                   {" "}
                   Area of Focus
-                  <img
+                  <Image
+                    height={8}
+                    width={5}
                     src="/images/down-arrow.png"
                     alt=""
                     className={Navbar.down_arrow_icon}
@@ -74,6 +76,7 @@ const Index = () => {
                       <Image
                         height={12}
                         width={12}
+                        alt=""
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
@@ -87,6 +90,7 @@ const Index = () => {
                       <Image
                         height={12}
                         width={12}
+                        alt=""
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
@@ -100,6 +104,7 @@ const Index = () => {
                       <Image
                         height={12}
                         width={12}
+                        alt=""
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
@@ -198,6 +203,7 @@ const Index = () => {
                         <Image
                           height={12}
                           width={12}
+                          alt=""
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />
@@ -213,6 +219,7 @@ const Index = () => {
                         <Image
                           height={12}
                           width={12}
+                          alt=""
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />
@@ -228,6 +235,7 @@ const Index = () => {
                         <Image
                           height={12}
                           width={12}
+                          alt=""
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />

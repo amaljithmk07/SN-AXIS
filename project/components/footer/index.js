@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import style from "./footer.module.css";
 import style from "@/styles/footer.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
+  console.log(lang);
   return (
     <div>
-      <div className={style.footer_section}>
+      <div
+        className={`${style.footer_section} ${lang == "en" ? "ltr" : "rtl"}`}
+      >
         <div className={`${style.footer_content_sec} container`}>
           {/* <img src="/images/logo.png" className={style.footer_logo} /> */}
           <div className={style.footer_logo}>

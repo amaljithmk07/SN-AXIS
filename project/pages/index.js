@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "@/styles/Home.module.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,17 +11,25 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 // console.log(router);
 
 // https://www.figma.com/design/BD28KjVfn1vEU7fBmPhFyx/SN-axis-Option-(Copy)?node-id=0-1&t=qiyOIPo6Uk5loiVn-0
 
 export default function page() {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
 
-
+  console.log(lang);
   return (
     <>
-      <div className={style.main_container}>
+      <div
+        className={`${style.main_container} ${lang == "en" ? "ltr" : "rtl"}`}
+      >
         {/* //discover legacy// */}
 
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper ">

@@ -32,7 +32,11 @@ const Index = () => {
   };
   return (
     <div>
-      <header className={Navbar.navbar_main_body}>
+      <header
+        className={`${Navbar.navbar_main_body}
+          ${lang == "ar" ? "rtl" : "ltr"}
+        `}
+      >
         {/* //////// */}
 
         <div className={Navbar.top_nav}>
@@ -76,7 +80,13 @@ const Index = () => {
                     className={Navbar.down_arrow_icon}
                   />
                   {/* {dropdown === true ? ( */}
-                  <ul className={Navbar.drop_down_container}>
+                  <ul
+                    className={
+                      lang == "en"
+                        ? `${Navbar.drop_down_container}`
+                        : `${Navbar.drop_down_container_rtl}`
+                    }
+                  >
                     <li>
                       <Link href="/wealth">Wealth Management </Link>
                       {/* <img

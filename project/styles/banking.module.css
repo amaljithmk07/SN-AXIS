@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
 .font_playfair {
   font-family: "Playfair Display", "Cairo";
@@ -53,6 +53,20 @@
   align-items: center;
   overflow: hidden;
 }
+.banking_toggle_container_rtl {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #ffffff 45%,
+    #191c40 45%,
+    #191c40 100%
+  );
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
 .banking_toggle_img_sec {
   height: 550px;
@@ -68,6 +82,16 @@
 .banking_toggle_data_sec {
   width: 50%;
   padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  color: #ffffff;
+}
+.banking_toggle_data_sec_rtl {
+  width: 50%;
+  padding-right: 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;

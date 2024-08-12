@@ -12,7 +12,16 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
+  console.log(lang);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -90,7 +99,9 @@ const Index = () => {
 
   return (
     <div>
-      <div className={about.about_main_body}>
+      <div
+        className={`${about.about_main_body} ${lang == "en" ? "ltr" : "rtl"}`}
+      >
         {/* //about_image_body/ */}
         <div
           style={{ background: `url(/images/about-us.png)` }}
@@ -136,9 +147,15 @@ const Index = () => {
 
         {/* / about_our_mission_section/// */}
 
-        <div className={about.about_our_mission_section}>
+        <div
+          className={` ${
+            lang == "en"
+              ? `${about.about_our_mission_section}`
+              : `${about.about_our_mission_section_rtl}`
+          }`}
+        >
           <div
-            className={`${about.about_our_mission_container_wrap} container`}
+            className={`${about.about_our_mission_container_wrap} container `}
           >
             <div className={about.about_our_mission_container}>
               <div className={`${about.about_our_mission_title} font_playfair`}>

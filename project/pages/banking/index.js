@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import banking from "@/styles/banking.module.css";
 import Featured from "../featuredInsights";
 import AOS from "aos";
@@ -6,13 +6,22 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
+  console.log(lang);
   useEffect(() => {
     AOS.init();
   });
 
   return (
-    <div>
+    <div className={lang == "en" ? "ltr" : "rtl"}>
       {/* //banking_image_body/ */}
       <div
         className="image_body"
@@ -41,19 +50,29 @@ const Index = () => {
 
         {/* // */}
         <div className={banking.banking_toggle_sec}>
-          <div className={banking.banking_toggle_container}>
+          <div
+            className={
+              lang == "en"
+                ? `${banking.banking_toggle_container}`
+                : `${banking.banking_toggle_container_rtl}`
+            }
+          >
             <div className={banking.banking_toggle_img_sec}>
               {/* <img data-aos="fade-right" src="/images/banking-img.png" /> */}
               <Image
                 data-aos="fade-right"
                 height={550}
-                width={400}                alt=""
-
+                width={400}
+                alt=""
                 src="/images/banking-img.png"
               />
             </div>
             <div
-              className={banking.banking_toggle_data_sec}
+              className={
+                lang == "en"
+                  ? `${banking.banking_toggle_data_sec}`
+                  : `${banking.banking_toggle_data_sec_rtl}`
+              }
               data-aos="fade-left"
             >
               <div
@@ -127,8 +146,8 @@ const Index = () => {
               {/* <img src="/images/banking-realising-wealth-img2.png" /> */}
               <Image
                 height={300}
-                width={300}                alt=""
-
+                width={300}
+                alt=""
                 src="/images/banking-realising-wealth-img2.png"
               />
             </div>
@@ -148,8 +167,8 @@ const Index = () => {
               {/* <img src="/images/banking-realising-wealth-img3.png" /> */}
               <Image
                 height={300}
-                width={300}                alt=""
-
+                width={300}
+                alt=""
                 src="/images/banking-realising-wealth-img3.png"
               />
             </div>

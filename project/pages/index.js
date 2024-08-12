@@ -11,10 +11,16 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
+// console.log(router);
 
 // https://www.figma.com/design/BD28KjVfn1vEU7fBmPhFyx/SN-axis-Option-(Copy)?node-id=0-1&t=qiyOIPo6Uk5loiVn-0
 
 export default function page() {
+  const router = useRouter();
+  console.log(router.asPath);
+
   return (
     <>
       <div className={style.main_container}>

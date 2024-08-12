@@ -23,7 +23,7 @@ const Index = () => {
   };
   return (
     <div>
-      <div className={Navbar.navbar_main_body}>
+      <header className={Navbar.navbar_main_body}>
         {/* //////// */}
 
         <div className={`${Navbar.top_nav}  `}>
@@ -273,7 +273,7 @@ const Index = () => {
             )}
           </div>
         </div>
-      </div>
+      </header>
     </div>
   );
 };

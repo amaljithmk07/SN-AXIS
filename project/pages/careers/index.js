@@ -1,6 +1,7 @@
 import React from "react";
 import careers from "./careers.module.css";
 import Link from "next/link";
+import Image from "next/image";
 const Index = () => {
   return (
     <div>
@@ -23,7 +24,13 @@ const Index = () => {
         </div>
         <div className={careers.careers_card_container}>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
@@ -32,30 +39,14 @@ const Index = () => {
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
-              </div>
-            </div>
-            <Link href={"/careersdetail"} className={careers.careers_card_btn}>
-              JOB DETAILS
-            </Link>
-          </div>
-          <div className={careers.careers_card}>
-            <img
-              src="/images/bookmark.png"
-              className={careers.careers_card_bookmark_img}
-            />
-            <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
-              <div>Credit Risk Management </div>{" "}
-              <div>
-                {" "}
-                <img src="/images/location.png" /> Dubai
-              </div>
-              <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>
@@ -63,19 +54,29 @@ const Index = () => {
             </Link>
           </div>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
             <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
+              <span>Senior Management Assistant </span>
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>
@@ -83,19 +84,29 @@ const Index = () => {
             </Link>
           </div>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
             <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
+              <span>Senior Management Assistant </span>
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>
@@ -103,19 +114,29 @@ const Index = () => {
             </Link>
           </div>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
             <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
+              <span>Senior Management Assistant </span>
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>
@@ -123,19 +144,29 @@ const Index = () => {
             </Link>
           </div>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
             <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
+              <span>Senior Management Assistant </span>
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>
@@ -143,59 +174,29 @@ const Index = () => {
             </Link>
           </div>
           <div className={careers.careers_card}>
-            <img
+            {/* <img
+              src="/images/bookmark.png"
+              className={careers.careers_card_bookmark_img}
+            /> */}
+            <Image
+              height={24}
+              width={24}
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
             />
             <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
+              <span>Senior Management Assistant </span>
               <div>Credit Risk Management </div>{" "}
               <div>
                 {" "}
-                <img src="/images/location.png" /> Dubai
+                {/* <img src="/images/location.png" />  */}
+                <Image height={20} width={20} src="/images/location.png" />
+                Dubai
               </div>
               <div>
-                <img src="/images/position.png" /> Posted Today
-              </div>
-            </div>
-            <Link href={"/careersdetail"} className={careers.careers_card_btn}>
-              JOB DETAILS
-            </Link>
-          </div>
-          <div className={careers.careers_card}>
-            <img
-              src="/images/bookmark.png"
-              className={careers.careers_card_bookmark_img}
-            />
-            <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
-              <div>Credit Risk Management </div>{" "}
-              <div>
-                {" "}
-                <img src="/images/location.png" /> Dubai
-              </div>
-              <div>
-                <img src="/images/position.png" /> Posted Today
-              </div>
-            </div>
-            <Link href={"/careersdetail"} className={careers.careers_card_btn}>
-              JOB DETAILS
-            </Link>
-          </div>
-          <div className={careers.careers_card}>
-            <img
-              src="/images/bookmark.png"
-              className={careers.careers_card_bookmark_img}
-            />
-            <div className={careers.careers_card_data}>
-              <span>Senior Management Assistant</span>
-              <div>Credit Risk Management </div>{" "}
-              <div>
-                {" "}
-                <img src="/images/location.png" /> Dubai
-              </div>
-              <div>
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" />  */}
+                <Image height={20} width={20} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
             <Link href={"/careersdetail"} className={careers.careers_card_btn}>

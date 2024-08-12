@@ -165,13 +165,23 @@ const Index = () => {
                     className={about.about_our_mission_container_content_btn}
                     onClick={() => ourMissionChanger("left")}
                   >
-                    <img src="/images/btn-right-arrow.png" />
+                    {/* <img src="/images/btn-right-arrow.png" /> */}
+                    <Image
+                      height={18}
+                      width={20}
+                      src="/images/btn-right-arrow.png"
+                    />
                   </button>
                   <button
                     className={about.about_our_mission_container_content_btn}
                     onClick={() => ourMissionChanger("right")}
                   >
-                    <img src="/images/btn-right-arrow.png" />
+                    {/* <img src="/images/btn-right-arrow.png" /> */}
+                    <Image
+                      height={18}
+                      width={20}
+                      src="/images/btn-right-arrow.png"
+                    />
                   </button>
                 </div>
               </div>
@@ -395,14 +405,14 @@ const Index = () => {
                 onClick={() => historyHandler("left")}
               >
                 {/* <img src="/images/btn-arrow.png" /> */}
-                <Image src={"/images/btn-arrow.png"} className="img_res" />
+                <Image src={"/images/btn-arrow.png"} height={15} width={10} />
               </button>
               <button
                 className={about.about_our_history_btn}
                 id="next_btn"
                 onClick={() => historyHandler("right")}
               >
-                <img src="/images/btn-arrow.png" />
+                <Image src={"/images/btn-arrow.png"} height={15} width={10} />{" "}
               </button>
             </div>
           </div>

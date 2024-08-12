@@ -4,6 +4,7 @@ import Featured from "../featuredInsights";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Index = () => {
   useEffect(() => {
@@ -42,7 +43,13 @@ const Index = () => {
         <div className={banking.banking_toggle_sec}>
           <div className={banking.banking_toggle_container}>
             <div className={banking.banking_toggle_img_sec}>
-              <img data-aos="fade-right" src="/images/banking-img.png" />
+              {/* <img data-aos="fade-right" src="/images/banking-img.png" /> */}
+              <Image
+                data-aos="fade-right"
+                height={550}
+                width={400}
+                src="/images/banking-img.png"
+              />
             </div>
             <div
               className={banking.banking_toggle_data_sec}
@@ -95,7 +102,13 @@ const Index = () => {
           <div className={banking.banking_realising_wealth_card}>
             <div className={banking.banking_realising_wealth_card_img}>
               {" "}
-              <img src="/images/banking-realising-wealth-img1.png" alt="" />
+              {/* <img src="/images/banking-realising-wealth-img1.png" alt="" /> */}
+              <Image
+                height={300}
+                width={300}
+                src="/images/banking-realising-wealth-img1.png"
+                alt=""
+              />
             </div>
 
             <div className={banking.banking_realising_wealth_card_paragraph}>
@@ -110,7 +123,12 @@ const Index = () => {
           <div className={banking.banking_realising_wealth_card}>
             <div className={banking.banking_realising_wealth_card_img}>
               {" "}
-              <img src="/images/banking-realising-wealth-img2.png" />
+              {/* <img src="/images/banking-realising-wealth-img2.png" /> */}
+              <Image
+                height={300}
+                width={300}
+                src="/images/banking-realising-wealth-img2.png"
+              />
             </div>
 
             <div className={banking.banking_realising_wealth_card_paragraph}>
@@ -125,7 +143,12 @@ const Index = () => {
           <div className={banking.banking_realising_wealth_card}>
             <div className={banking.banking_realising_wealth_card_img}>
               {" "}
-              <img src="/images/banking-realising-wealth-img3.png" />
+              {/* <img src="/images/banking-realising-wealth-img3.png" /> */}
+              <Image
+                height={300}
+                width={300}
+                src="/images/banking-realising-wealth-img3.png"
+              />
             </div>
 
             <div className={banking.banking_realising_wealth_card_paragraph}>

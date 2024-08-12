@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import careersdetails from "./careersdetails.module.css";
+import Image from "next/image";
 const Index = () => {
   const [fileHandler, setFileHandler] = useState();
   const inputFileHandler = (e) => {
@@ -44,21 +45,27 @@ const Index = () => {
                   careersdetails.careers_details_content_title_timer_body
                 }
               >
-                <img src="/images/location.png" /> Dubai ,UAE
+                {/* <img src="/images/location.png" />  */}
+                <Image height={25} width={25} src="/images/location.png" />
+                Dubai ,UAE
               </div>
               <div
                 className={
                   careersdetails.careers_details_content_title_timer_body
                 }
               >
-                <img src="/images/clock.png" /> Full Time
+                {/* <img src="/images/clock.png" /> */}
+                <Image height={25} width={25} src="/images/clock.png" />
+                Full Time
               </div>
               <div
                 className={
                   careersdetails.careers_details_content_title_timer_body
                 }
               >
-                <img src="/images/position.png" /> Posted Today
+                {/* <img src="/images/position.png" /> */}
+                <Image height={25} width={25} src="/images/position.png" />
+                Posted Today
               </div>
             </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Index = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -35,9 +36,16 @@ const Index = () => {
 
           <div className={Navbar.navbar_sub_body}>
             <Link href={"/"}>
-              <img
+              {/* <img
                 src="/images/logo.png"
                 alt=""
+                className={Navbar.navbar_logo}
+              /> */}
+              <Image
+                src="/images/logo.png"
+                alt=""
+                height={90}
+                width={150}
                 className={Navbar.navbar_logo}
               />
             </Link>
@@ -59,21 +67,39 @@ const Index = () => {
                   <ul className={Navbar.drop_down_container}>
                     <li>
                       <Link href="/wealth">Wealth Management </Link>
-                      <img
+                      {/* <img
+                        src="/images/top-right-arrow.png"
+                        className={Navbar.top_right_arrow_icon}
+                      /> */}
+                      <Image
+                        height={12}
+                        width={12}
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
                     </li>
                     <li>
                       <Link href="/banking">Banking Services</Link>
-                      <img
+                      {/* <img
+                        src="/images/top-right-arrow.png"
+                        className={Navbar.top_right_arrow_icon}
+                      /> */}
+                      <Image
+                        height={12}
+                        width={12}
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
                     </li>
                     <li>
                       <Link href="/philanthropy">Philanthropy</Link>
-                      <img
+                      {/* <img
+                        src="/images/top-right-arrow.png"
+                        className={Navbar.top_right_arrow_icon}
+                      /> */}
+                      <Image
+                        height={12}
+                        width={12}
                         src="/images/top-right-arrow.png"
                         className={Navbar.top_right_arrow_icon}
                       />
@@ -143,7 +169,14 @@ const Index = () => {
                   >
                     {" "}
                     Area of Focus
-                    <img
+                    {/* <img
+                      src="/images/down-arrow.png"
+                      alt=""
+                      className={Navbar.down_arrow_icon}
+                    /> */}
+                    <Image
+                      height={8}
+                      width={5}
                       src="/images/down-arrow.png"
                       alt=""
                       className={Navbar.down_arrow_icon}
@@ -156,7 +189,15 @@ const Index = () => {
                         <Link href="/wealth" onClick={hambOff}>
                           Wealth Management{" "}
                         </Link>
+                        {/*
+                        
                         <img
+                          src="/images/top-right-arrow.png"
+                          className={Navbar.top_right_arrow_icon}
+                        /> */}
+                        <Image
+                          height={12}
+                          width={12}
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />
@@ -165,7 +206,13 @@ const Index = () => {
                         <Link href="/banking" onClick={hambOff}>
                           Banking Services
                         </Link>
-                        <img
+                        {/* <img
+                          src="/images/top-right-arrow.png"
+                          className={Navbar.top_right_arrow_icon}
+                        /> */}
+                        <Image
+                          height={12}
+                          width={12}
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />
@@ -174,7 +221,13 @@ const Index = () => {
                         <Link href="/philanthropy" onClick={hambOff}>
                           Philanthropy
                         </Link>
-                        <img
+                        {/* <img
+                          src="/images/top-right-arrow.png"
+                          className={Navbar.top_right_arrow_icon}
+                        /> */}
+                        <Image
+                          height={12}
+                          width={12}
                           src="/images/top-right-arrow.png"
                           className={Navbar.top_right_arrow_icon}
                         />

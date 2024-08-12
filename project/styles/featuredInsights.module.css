@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-.font_cairo{
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+.font_cairo {
   font-family: "Cairo", sans-serif;
 }
 
@@ -7,7 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8e8e8;
+  /* background-color: #e8e8e8; */
+  background-color: #f8f8f8;
 }
 .wealth_featured_insight_container {
   width: 100%;
@@ -30,10 +31,8 @@
   /* font-family: "Cairo"; */
   border-bottom: 2px solid #b29758;
 }
-.wealth_featured_insight_title >h2{
-  
+.wealth_featured_insight_title > h2 {
   font-size: 55px;
-
 }
 .wealth_featured_insight_card_btn_sec {
   width: 100%;
@@ -154,7 +153,7 @@
 .wealth_featured_insight_btn {
   height: 54px;
   width: 188px;
-  background-color: #e1e1e1;
+  background-color: #f8f8f8;
   border: 0;
   border-radius: 40px;
   display: flex;
@@ -202,11 +201,10 @@
 /* ///Responsive area */
 
 @media screen and (max-width: 1600px) {
-  .wealth_featured_insight_title >h2{
+  .wealth_featured_insight_title > h2 {
     line-height: 50px;
-  
+
     font-size: 50px;
-  
   }
   .wealth_featured_insight_card_previous_btn {
     left: -6%;
@@ -216,7 +214,7 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  .wealth_featured_insight_title >h2{
+  .wealth_featured_insight_title > h2 {
     line-height: 45px;
     font-size: 45px;
   }

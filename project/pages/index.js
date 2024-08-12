@@ -18,22 +18,22 @@ import { useRouter } from "next/router";
 // https://www.figma.com/design/BD28KjVfn1vEU7fBmPhFyx/SN-axis-Option-(Copy)?node-id=0-1&t=qiyOIPo6Uk5loiVn-0
 
 export default function page() {
-  const router = useRouter();
-  useEffect(() => {
-    setLang(router.locale);
-  }, []);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   setLang(router.locale);
+  // }, []);
   const [lang, setLang] = useState();
 
   console.log(lang);
   return (
     <>
       <div
-        className={`${style.main_container} ${lang == "en" ? "ltr" : "rtl"}`}
+        className={`${style.main_container} ${lang == "ar" ? "rtl" : "ltr"}`}
       >
         {/* //discover legacy// */}
 
         <Swiper
-          dir={lang === "en" ? "ltr" : "rtl"}
+          // dir={lang === "en" ? "ltr" : "rtl"}
           // dir="rtl"
           pagination={true}
           modules={[Pagination]}
@@ -49,7 +49,7 @@ export default function page() {
             <div className={`${style.main_discovery_legacy_section} container`}>
               <div className={style.main_discovery_legacy_title_sec}>
                 <div className={`${style.main_discovery_legacy_title}`}>
-                  <h1>Discover a Legacy of Financial Insight</h1>
+                  <h1>Discover A Legacy Of Financial Insight</h1>
                 </div>
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -92,8 +92,8 @@ export default function page() {
               className={`${style.main_pioneering_excellence_title} font_playfair`}
             >
               <h2>
-                Pioneering <span style={{ color: "#B29758" }}> Excellence</span>{" "}
-                Together
+                Pioneering &nbsp;{" "}
+                <span style={{ color: "#B29758" }}> Excellence</span> Together
               </h2>
             </div>
             <div className={style.main_pioneering_excellence_paragraph}>
@@ -178,7 +178,7 @@ export default function page() {
                 className={`${style.main_area_of_focus_card_title}  font_playfair`}
               >
                 {" "}
-                <div>Banking</div>
+                <div>Banking Services</div>
                 <Link
                   href={"/banking"}
                   className={style.main_area_of_focus_card_arrow_btn}
@@ -494,7 +494,7 @@ export default function page() {
                 <div
                   className={style.main_news_and_insight_btn_background}
                 ></div>
-                <span> View All News</span>
+                <span> VIEW ALL NEWS</span>
                 <Image
                   height={15}
                   width={15}
@@ -515,7 +515,7 @@ export default function page() {
               className={`${style.main_choose_the_right_investment_title}  font_playfair`}
             >
               <h2>
-                Choose the Right <br /> Investment Approach
+                Choose The Right <br /> Investment Approach
               </h2>
             </div>
             <div className={style.main_choose_the_right_investment_paragraph}>

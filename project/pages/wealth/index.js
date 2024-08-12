@@ -18,7 +18,7 @@ const Index = () => {
       <div
         className="image_body"
         style={{
-          background: `url(/images/wealth-management.jpg) center `,
+          background: `url(/images/wealth-management.jpg) bottom `,
         }}
       >
         <span className="container">

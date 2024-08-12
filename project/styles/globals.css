@@ -73,7 +73,7 @@ h4 {
   padding: 0 5px;
   transform: translate(-50%, 0%);
   position: absolute;
-  border: 1px solid #b29758;
+  border: 1px solid #000000;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -104,18 +104,19 @@ h4 {
 }
 
 .image_body {
-  height: 540px;
+  height: 580px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   font-family: "Playfair Display", "Cairo";
+  background-color: red;
 }
 
 .image_body > span > h1 {
-  font-size: 55px;
+  font-size: 60px;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   width: 100%;
   letter-spacing: -1px;
 }

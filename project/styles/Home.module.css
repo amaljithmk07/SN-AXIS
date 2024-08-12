@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
 .font_playfair {
-  font-family: "Playfair Display",  'Cairo';
+  font-family: "Playfair Display", "Cairo";
 }
 
 /* ////////// */
@@ -13,7 +13,7 @@
   min-height: 100vh;
   width: 100%;
   /* background-color: red; */
-  font-family: "Poppins", 'Cairo';
+  font-family: "Poppins", "Cairo";
   overflow-x: hidden;
 }
 
@@ -26,17 +26,17 @@
 }
 
 .main_discovery_legacy_title_sec {
-  min-height: 600px;
-  width: 600px;
+  width: 650px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 100px;
   color: rgb(255, 255, 255);
   gap: 20px;
-
+  /* background-color: rebeccapurple; */
   font-size: 16px;
-  font-family: "Poppins",  'Cairo';
+  font-family: "Poppins", "Cairo";
 }
 
 .main_discovery_legacy_title h1 {
@@ -71,7 +71,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 55px;
-  line-height: 60px;
+  line-height: 70px;
   letter-spacing: -2px;
 }
 
@@ -90,7 +90,9 @@
 /* /////// */
 
 .main_area_of_focus_section {
-  min-height: 1048px;
+  /* min-height: 1048px; */
+  padding-top: 80px;
+  padding-bottom: 130px;
   width: 100%;
   background-color: #191c40;
   display: flex;
@@ -98,14 +100,14 @@
   align-items: center;
   flex-direction: column;
   /* padding: 90px 0 50px 0; */
-  gap: 50px;
+  gap: 40px;
 }
 
 .main_area_of_focus_title_sec > h2 {
   min-height: 100px;
   width: 100%;
   /* background-color: red; */
-  line-height: 60px;
+  line-height: 70px;
   display: flex;
   color: white;
   justify-content: flex-start;
@@ -191,11 +193,12 @@
 
 /* /// */
 .main_news_and_insight_section {
-  min-height: 830px;
   width: 100%;
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
 .main_news_and_insight_container_section {
-  min-height: 830px;
+  /* min-height: 830px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -222,7 +225,6 @@
 }
 
 .main_news_and_insight_card_btn_sec {
-  min-height: 500px;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -313,6 +315,7 @@
 .main_news_and_insight_card_img {
   height: 100%;
   width: 100%;
+  display: block;
   transition: all 0.3s ease-in-out;
 }
 
@@ -424,20 +427,22 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .main_choose_the_right_investment_title > h2 {
   font-size: 55px;
   line-height: 60px;
   min-height: 20px;
-  letter-spacing: -1.5px;
+  font-weight: 300;
+  letter-spacing: -3px;
 }
 
 .main_choose_the_right_investment_paragraph {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
   min-height: 20px;
+  font-weight: 300;
 }
 
 /* ///Responsive Area//// */
@@ -599,9 +604,8 @@
   /*  */
 
   .main_news_and_insight_section {
-    min-height: 830px;
     width: 100%;
-    padding: 30px 0%;
+    padding: 60px 0%;
   }
 
   .main_news_and_insight_title {
@@ -620,7 +624,11 @@
   .main_area_of_focus_section {
     padding: 5% 0%;
   }
-
+  .main_area_of_focus_title_sec > h2,
+  .main_news_and_insight_title > h2 {
+    font-size: 45px;
+    line-height: normal;
+  }
   .main_area_of_focus_card_body {
     height: 370px;
     width: 33%;
@@ -635,19 +643,13 @@
     height: 37px;
     width: 37px;
   }
-  .main_news_and_insight_container_section {
-    min-height: 630px;
-  }
+
   .main_news_and_insight_card_container {
     width: 97%;
   }
   .main_news_and_insight_section {
     min-height: 530px;
     padding: 5% 0%;
-  }
-
-  .main_news_and_insight_title {
-    font-size: 35px;
   }
 
   .main_news_and_insight_card_date {
@@ -658,9 +660,17 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .main_news_and_insight_card_btn_sec {
+    gap: 30px;
+  }
+}
 @media screen and (max-width: 1024px) {
+  .main_area_of_focus_section {
+    padding: 4% 0%;
+  }
   .main_discovery_legacy_section {
-    height: 90vh;
+    height: 80vh;
   }
   .main_discovery_legacy_title_sec {
     width: 70%;
@@ -737,7 +747,6 @@
     line-height: 45px;
   }
   .main_news_and_insight_card_btn_sec {
-    min-height: 400px;
     width: 96%;
   }
   .main_news_and_insight_container_section {
@@ -757,6 +766,7 @@
   .main_news_and_insight_btn {
     height: 45px;
     width: 150px;
+    font-size: 12px;
   }
   .main_news_and_insight_btn_background {
     left: -10px;
@@ -796,6 +806,7 @@
     line-height: 42px;
     font-size: 38px;
   }
+
   .main_choose_the_right_investment_section {
     height: 290px;
   }
@@ -852,9 +863,12 @@
   }
   .main_news_and_insight_btn > span {
     z-index: 1;
-    font-size: 12px;
+    font-size: 11px;
   }
-
+  .main_news_and_insight_btn {
+    height: 40px;
+    width: 142px;
+  }
   .main_news_and_insight_card_date {
     top: 25px;
     height: 17px;
@@ -875,12 +889,17 @@
   .main_discovery_legacy_section {
     height: 65vh;
   }
+  .main_area_of_focus_title_sec > h2,
+  .main_news_and_insight_title > h2 {
+    font-size: 36px;
+    line-height: normal;
+  }
   .main_discovery_legacy_title {
     font-size: 39px;
   }
   .main_pioneering_excellence_container {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
   .main_news_and_insight_container_section {
     min-height: 60px;

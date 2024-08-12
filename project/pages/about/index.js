@@ -104,7 +104,9 @@ const Index = () => {
       >
         {/* //about_image_body/ */}
         <div
-          style={{ background: `url(/images/about-us.png)` }}
+          style={{
+            background: `url(/images/about-us.png)  bottom `,
+          }}
           className="image_body"
         >
           <span className="container">

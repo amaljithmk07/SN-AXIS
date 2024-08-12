@@ -28,6 +28,7 @@ const Index = () => {
               objectFit="cover"
               width={183}
               height={99}
+              className={style.footer_logo}
             />
           </div>
           <div className={style.footer_content}>
@@ -85,16 +86,18 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className={`${style.footer_privacy_sec} font_poppins container`}>
-          <div>Copyright © 2024 SN AXIS. All Rights Reserved</div>
+        <div className={`${style.footer_privacy_container} `}>
+          <div className={`${style.footer_privacy_sec} font_poppins container`}>
+            <div>Copyright © 2024 SN AXIS. All Rights Reserved</div>
 
-          <ul>
-            <li>Fraud Warning</li>
-            <li>Cookies Policy</li>
-            <li>Privacy Policy</li>
-            <li>Terms and Coditions</li>
-          </ul>
-          {/* <div className={style.footer_privacy_border}></div> */}
+            <ul>
+              <li>Fraud Warning</li>
+              <li>Cookies Policy</li>
+              <li>Privacy Policy</li>
+              <li>Terms and Coditions</li>
+            </ul>
+            {/* <div className={style.footer_privacy_border}></div> */}
+          </div>
         </div>
       </div>
     </div>

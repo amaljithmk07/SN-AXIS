@@ -32,7 +32,13 @@ export default function page() {
       >
         {/* //discover legacy// */}
 
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper ">
+        <Swiper
+          dir={lang === "en" ? "ltr" : "rtl"}
+          // dir="rtl"
+          pagination={true}
+          modules={[Pagination]}
+          className="mySwiper "
+        >
           <SwiperSlide
             style={{
               background:

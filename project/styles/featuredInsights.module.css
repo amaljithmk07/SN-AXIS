@@ -174,7 +174,7 @@
 }
 .wealth_featured_insight_btn_background {
   position: absolute;
-  left: 0;
+  left: -10px;
   top: 0;
   height: 55px;
   width: 0px;
@@ -183,7 +183,7 @@
   background-color: #b29758;
 }
 .wealth_featured_insight_btn:hover .wealth_featured_insight_btn_background {
-  width: 190px;
+  width: 200px;
 }
 
 .wealth_featured_insight_btn > span {

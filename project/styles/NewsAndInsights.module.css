@@ -56,7 +56,7 @@
   height: 20px;
   width: auto;
   position: absolute;
-  left: 35px;
+  /* left: 35px; */
   transform: translateY(-50%);
   top: 50%;
 }
@@ -79,7 +79,7 @@
   height: 9px;
   width: auto;
   position: absolute;
-  right: 20px;
+  /* right: 20px; */
   transform: translateY(-50%);
   top: 50%;
 }
@@ -182,7 +182,7 @@
   .news_and_insights_content_section_searchbar_icon {
     height: 18px;
     width: 18px;
-    left: 6%;
+    /* left: 6%; */
   }
   .news_and_insights_content_section_searchbar > input {
     font-size: 15px;
@@ -232,7 +232,8 @@
   }
   .news_and_insights_content_section_dropdown_icon {
     height: 9px;
-    right: 10%;
+    width: auto;
+    /* right: 10%; */
   }
   .NewsAndInsights_news_and_insights_insight_card_date__dsn4H {
     height: 20px;

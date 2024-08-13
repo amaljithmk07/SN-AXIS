@@ -139,6 +139,18 @@ h4 {
 .img_flip {
   transform: rotate(180deg);
 }
+.left35 {
+  left: 35px;
+}
+.right35 {
+  right: 35px;
+}
+.right20 {
+  right: 20px;
+}
+.left20 {
+  left: 20px;
+}
 
 /* //////////////////////////////////// */
 @media screen and (max-width: 1600px) {
@@ -167,6 +179,12 @@ h4 {
 @media screen and (max-width: 1366px) {
   .image_body > span > h1 {
     font-size: 45px;
+  }
+  .left35 {
+    left: 6%;
+  }
+  .right35 {
+    right: 6%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -208,6 +226,12 @@ h4 {
     font-size: 14px;
     padding: 0px 20px;
     gap: 0;
+  }
+  .left35 {
+    left: 7%;
+  }
+  .right35 {
+    right: 7%;
   }
 }
 @media screen and (max-width: 950px) {

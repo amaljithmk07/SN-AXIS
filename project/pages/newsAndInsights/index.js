@@ -50,9 +50,9 @@ const Index = () => {
               width={18}
               alt=""
               src="/images/search-icon.png"
-              className={
+              className={`${lang == "ar" ? `right35` : "left35"} ${
                 newsAndInsights.news_and_insights_content_section_searchbar_icon
-              }
+              }`}
             />
           </div>
           {/* ///// */}
@@ -73,9 +73,9 @@ const Index = () => {
               width={18}
               alt=""
               src="/images/dropdown-arrow.png"
-              className={
+              className={`${lang == "ar" ? `left20` : "right20"} ${
                 newsAndInsights.news_and_insights_content_section_dropdown_icon
-              }
+              }`}
             />
           </div>
         </div>
@@ -91,11 +91,6 @@ const Index = () => {
               26-07-2024
             </div>
 
-            {/* <img
-              src="/images/news-insight-1.png"
-              alt=""
-              className={newsAndInsights.news_and_insights_insight_card_img}
-            /> */}
             <Image
               height={300}
               width={300}

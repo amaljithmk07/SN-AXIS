@@ -240,7 +240,7 @@
   }
   .footer_logo {
     height: 60px;
-    width: 100px;
+    width: auto;
   }
   .footer_content_data {
     min-height: 80px;
@@ -277,7 +277,7 @@
   }
   .footer_logo {
     height: 60px;
-    width: 100px;
+    width: auto;
   }
   .footer_content_data {
     min-height: 80px;

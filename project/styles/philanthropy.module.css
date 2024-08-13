@@ -385,6 +385,9 @@
   .philanthropy_toggle_data_title > h2 {
     font-size: 20px;
   }
+  .philanthropy_empowering_generation_content_card_body {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -408,7 +411,7 @@
     width: 88%;
   }
   .philanthropy_empowering_generation_content_card_body {
-    width: 48%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {

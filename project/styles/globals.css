@@ -120,12 +120,6 @@ h4 {
   width: 100%;
   letter-spacing: -1px;
 }
-.left_padding {
-  left: 25px;
-}
-.right_padding {
-  right: 25px;
-}
 
 .img_res {
   width: 100%;
@@ -139,12 +133,26 @@ h4 {
 .img_flip {
   transform: rotate(180deg);
 }
+
+/* //Bookmark img left padding/// */
+.left_padding {
+  left: 25px;
+}
+.right_padding {
+  right: 25px;
+}
+/* ////left35 Search bar icon */
 .left35 {
   left: 35px;
 }
 .right35 {
+  top: 35% !important;
   right: 35px;
+  transform: scaleX(-1) !important ;
+  /* background-color: rgb(255, 255, 0); */
 }
+
+/* ///left20 Dropdown icon///// */
 .right20 {
   right: 20px;
 }
@@ -227,10 +235,22 @@ h4 {
     padding: 0px 20px;
     gap: 0;
   }
+
+  /* ////left35 Search bar icon */
+
   .left35 {
     left: 7%;
   }
   .right35 {
+    right: 7%;
+    /* background-color: rebeccapurple; */
+  }
+  /* ///left20 Dropdown icon///// */
+
+  .left20 {
+    left: 7%;
+  }
+  .right20 {
     right: 7%;
   }
 }

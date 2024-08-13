@@ -60,9 +60,11 @@ const Index = () => {
           </div>
           {/* ///// */}
           <div
-            className={
-              newsAndInsights.news_and_insights_content_section_dropdown
-            }
+            className={`${
+              lang == "ar"
+                ? `${newsAndInsights.news_and_insights_content_section_dropdown_ar}`
+                : `${newsAndInsights.news_and_insights_content_section_dropdown}`
+            }`}
           >
             In The News{" "}
             {/* <img

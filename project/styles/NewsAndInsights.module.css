@@ -65,6 +65,7 @@
   top: 50%;
 }
 
+.news_and_insights_content_section_dropdown_ar,
 .news_and_insights_content_section_dropdown {
   height: 65px;
   position: relative;
@@ -78,6 +79,9 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+.news_and_insights_content_section_dropdown_ar {
+  padding: 0 25px 0 55px;
 }
 .news_and_insights_content_section_dropdown_icon {
   height: 9px;
@@ -157,6 +161,7 @@
     height: 55px;
     width: 300px;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 55px;
     width: 130px;
@@ -202,6 +207,7 @@
     width: 80%;
     padding: 0px 5% 0 15%;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 45px;
     width: 100px;
@@ -244,11 +250,15 @@
     width: 80%;
     padding: 0px 2% 0 18%;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 40px;
     width: 81px;
     font-size: 13px;
     padding: 0px 5% 0 2%;
+  }
+  .news_and_insights_content_section_dropdown_ar {
+    padding: 0px 2% 0 5%;
   }
   .news_and_insights_content_section_dropdown_icon {
     height: 9px;
@@ -286,11 +296,15 @@
     width: 79%;
     padding: 0px 1% 0 20%;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 35px;
     width: 73px;
     font-size: 12px;
     padding: 0px 5% 0 2%;
+  }
+  .news_and_insights_content_section_dropdown_ar {
+    padding: 0px 2% 0 5%;
   }
   .news_and_insights_insight_card_date {
     height: 20px;
@@ -313,6 +327,7 @@
   .news_and_insights_insight_card {
     width: 49%;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 35px;
     width: 100px;
@@ -327,6 +342,7 @@
     height: 33px;
     width: 150px;
   }
+  .news_and_insights_content_section_dropdown_ar,
   .news_and_insights_content_section_dropdown {
     height: 33px;
     width: 95px;

@@ -466,7 +466,7 @@
 
   .navbar_logo {
     height: 57px;
-    width: 70px;
+    width: auto;
   }
   .navbar_hamb_main {
     height: 37px;

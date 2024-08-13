@@ -6,7 +6,14 @@ import Featured from "../featuredInsights";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
   useEffect(() => {
     AOS.init();
   });
@@ -14,11 +21,11 @@ const Index = () => {
   /////////////
 
   return (
-    <div>
+    <div className={lang == "en" ? "ltr" : "rtl"}>
       {/* //wealth_image_body/ */}
       <div
         className="image_body"
-        style={{ background: `url(/images/philanthropy.png) center` }}
+        style={{ background: `url(/images/philanthropy.png) bottom` }}
       >
         <span className="container">
           <h1>Philanthropy</h1>
@@ -41,7 +48,13 @@ const Index = () => {
         {/* /// */}
 
         <div className={philanthropy.philanthropy_toggle_sec}>
-          <div className={`${philanthropy.philanthropy_toggle_container} `}>
+          <div
+            className={`${
+              lang == "en"
+                ? `${philanthropy.philanthropy_toggle_container}`
+                : `${philanthropy.philanthropy_toggle_container_ar}`
+            } `}
+          >
             <div
               className={philanthropy.philanthropy_toggle_data_sec}
               data-aos="fade-right"
@@ -72,8 +85,8 @@ const Index = () => {
               /> */}
               <Image
                 height={550}
-                width={900}                 alt=""
-
+                width={900}
+                alt=""
                 data-aos="fade-left"
                 src="/images/philanthropy-content.png"
               />
@@ -111,8 +124,8 @@ const Index = () => {
               {" "}
               <Image
                 height={220}
-                width={320}                 alt=""
-
+                width={320}
+                alt=""
                 src="/images/philanthropy-empowering-generation-img1.png"
               />
               <div
@@ -135,8 +148,8 @@ const Index = () => {
             >
               <Image
                 height={220}
-                width={320}                 alt=""
-
+                width={320}
+                alt=""
                 src="/images/philanthropy-empowering-generation-img2.png"
               />
               <div
@@ -159,8 +172,8 @@ const Index = () => {
             >
               <Image
                 height={220}
-                width={320}                 alt=""
-
+                width={320}
+                alt=""
                 src="/images/philanthropy-empowering-generation-img3.png"
               />
               <div

@@ -120,12 +120,26 @@ h4 {
   width: 100%;
   letter-spacing: -1px;
 }
+.left_padding {
+  left: 25px;
+}
+.right_padding {
+  right: 25px;
+}
+
 .img_res {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
+.img_rotate {
+  transform: rotate(270deg);
+}
+.img_flip {
+  transform: rotate(180deg);
+}
+
 /* //////////////////////////////////// */
 @media screen and (max-width: 1600px) {
   .swiper-pagination {
@@ -264,6 +278,12 @@ h4 {
   .image_body > span > h1 {
     font-size: 22px;
     padding-bottom: 25px;
+  }
+  .right_padding {
+    right: 10px;
+  }
+  .left_padding {
+    left: 10px;
   }
 }
 

@@ -18,10 +18,10 @@ import { useRouter } from "next/router";
 // https://www.figma.com/design/BD28KjVfn1vEU7fBmPhFyx/SN-axis-Option-(Copy)?node-id=0-1&t=qiyOIPo6Uk5loiVn-0
 
 export default function page() {
-  // const router = useRouter();
-  // useEffect(() => {
-  //   setLang(router.locale);
-  // }, []);
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
   const [lang, setLang] = useState();
 
   console.log(lang);
@@ -136,7 +136,7 @@ export default function page() {
                 src="/images/img-1.png"
                 alt="Description of the image"
                 height={638}
-                className="img_res"
+                className={`img_res `}
                 width={638}
                 objectFit="cover"
               />
@@ -154,7 +154,7 @@ export default function page() {
                       alt="Right Arrow image"
                       height={16}
                       width={20}
-                      className="img_res"
+                      className={`img_res ${lang == "ar" ? "img_flip" : ""}`}
                     />
                   </div>
                 </Link>{" "}
@@ -189,7 +189,7 @@ export default function page() {
                       alt="Right Arrow image"
                       height={16}
                       width={20}
-                      className="img_res"
+                      className={`img_res ${lang == "ar" ? "img_flip" : ""}`}
                     />
                   </div>
                 </Link>{" "}
@@ -224,7 +224,7 @@ export default function page() {
                       alt="Right Arrow image"
                       height={16}
                       width={20}
-                      className="img_res"
+                      className={`img_res ${lang == "ar" ? "img_flip" : ""}`}
                     />
                   </div>
                 </Link>{" "}
@@ -250,6 +250,8 @@ export default function page() {
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={20}
+                  // dir="rtl"
+                  // dir={`${lang == "ar" ? "rtl" : ""}`}
                   // navigation={true}
                   navigation={{
                     prevEl: "#next_btn",
@@ -300,6 +302,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -331,6 +334,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -362,6 +366,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -393,6 +398,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -424,6 +430,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -455,6 +462,7 @@ export default function page() {
                             width={12}
                             src="/images/right-arrow.png"
                             alt=""
+                            className={` ${lang == "ar" ? "img_flip" : ""}`}
                           />
                         </div>
                       </div>
@@ -500,6 +508,7 @@ export default function page() {
                   width={15}
                   src="/images/right-arrow.png"
                   alt=""
+                  className={` ${lang == "ar" ? "img_flip" : ""}`}
                 />
               </Link>
               {/* /// */}

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import featuredInsights from "@/styles/featuredInsights.module.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,15 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
   return (
     <div>
       <div className={`${featuredInsights.wealth_featured_insight_section}`}>
@@ -370,6 +378,7 @@ const Index = () => {
                 width={15}
                 src="/images/right-arrow.png"
                 alt=""
+                className={lang == "ar" ? "img_flip" : ""}
               />
             </button>
             {/* /// */}

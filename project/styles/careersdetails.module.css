@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
 .font_playfair {
   font-family: "Playfair Display", "Cairo";
@@ -15,12 +15,12 @@
 /* //// */
 .careers_details_content_section {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 20px;
   /* background-color: red; */
 }
 .careers_details_content_title {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@
 }
 
 .careers_details_content_body_leftside {
-  width: 100%;
+  width: 55%;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
@@ -102,12 +102,10 @@
 }
 
 .careers_details_content_body_leftside_content_sec {
-  min-height: 400px;
   width: 100%;
-  /* background-color: rgb(0, 62, 112); */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   font-family: "Poppins", "Cairo";
 }
 
@@ -123,7 +121,7 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   font-weight: 500;
   line-height: 30px;
   padding-left: 5%;
@@ -138,13 +136,13 @@
 
 .careers_details_content_body_leftside_content > li::marker {
   color: #b29758;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* /////// */
 
 .careers_details_content_body_rightside {
-  width: 100%;
+  width: 45%;
   padding: 100px 0;
   /* background-color: rgb(255, 162, 224); */
 }
@@ -155,13 +153,12 @@
   /* background-color: rgb(0, 62, 112); */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   font-family: "Poppins", "Cairo";
 }
 
 .careers_details_content_body_rightside_title > h3 {
-  width: 95%;
-  padding-left: 5%;
+  width: 100%;
   /* background-color: rgb(51, 180, 0); */
   font-size: 40px;
   font-family: "Playfair Display", "Cairo";
@@ -169,12 +166,11 @@
 
 .careers_details_content_body_rightside_content {
   height: auto;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 
-  padding-left: 5%;
   /* background-color: red; */
 }
 
@@ -185,14 +181,17 @@
   padding: 5px 3%;
   font-family: "Poppins", "Cairo";
 
-  border-radius: 5px;
+  border-radius: 7px;
   border: 1px solid rgb(212, 212, 212);
 }
-
+.careers_details_content_body_rightside_content_input::placeholder {
+  color: rgb(189, 189, 189);
+}
 .careers_details_content_body_rightside_content_input:focus {
   outline: 1px solid #b29758;
 }
 
+.careers_details_content_body_rightside_content_input_file_ar,
 .careers_details_content_body_rightside_content_input_file {
   height: 48px;
   width: 97%;
@@ -203,8 +202,12 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  color: rgb(109, 109, 109);
+  /* background-color: red; */
+  color: rgb(189, 189, 189);
   border: 1px solid rgb(212, 212, 212);
+}
+.careers_details_content_body_rightside_content_input_file_ar {
+  padding: 5px 3% 5px 0;
 }
 
 .careers_details_content_body_rightside_content_input_file_btn {
@@ -225,7 +228,9 @@
   height: 55px;
   border: 0;
   border-radius: 100px;
-  font-family: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 20px;
   color: white;
   background-color: #444444;
   cursor: pointer;
@@ -293,6 +298,7 @@
     width: 90%;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 40px;
   }
@@ -336,6 +342,7 @@
     height: 45px;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 38px;
     font-size: 14px;
@@ -379,6 +386,7 @@
     gap: 25px;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 33px;
     font-size: 14px;
@@ -404,6 +412,7 @@
     line-height: 28px;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 30px;
     font-size: 13px;
@@ -453,6 +462,7 @@
     font-size: 12px;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 26px;
     font-size: 12px;
@@ -508,6 +518,7 @@
     font-size: 12px;
   }
   .careers_details_content_body_rightside_content_input,
+  .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 29px;
     font-size: 12px;

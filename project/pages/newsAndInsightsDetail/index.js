@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import newsAndInsights from "@/styles/NewsAndInsightsDetail.module.css";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,12 +8,21 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
+  console.log(lang);
   return (
-    <div>
+    <div className={lang == "en" ? "ltr" : "rtl"}>
       <div
         className="image_body"
-        style={{ background: `url(/images/news-and-insights.png) center` }}
+        style={{ background: `url(/images/news-and-insights.png) bottom` }}
       >
         <span className="container">
           <h1>News & Insights</h1>

@@ -87,7 +87,13 @@ const Index = () => {
           </div>
         </div>
         <div className={`${style.footer_privacy_container} `}>
-          <div className={`${style.footer_privacy_sec} font_poppins container`}>
+          <div
+            className={`${
+              lang == "en"
+                ? `${style.footer_privacy_sec}`
+                : `${style.footer_privacy_sec_ar}`
+            }   font_poppins container`}
+          >
             <div>Copyright © 2024 SN AXIS. All Rights Reserved</div>
 
             <ul>

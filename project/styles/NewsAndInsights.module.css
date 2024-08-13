@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-.font_cairo{
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+.font_cairo {
   font-family: "Cairo", sans-serif;
 }
 
@@ -17,11 +17,11 @@
 .news_and_insights_content_section {
   min-height: 100vh;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   /* background-color: #525252; */
 }
 /*  */
@@ -32,7 +32,7 @@
   font-family: "Poppins", "Cairo";
   /* background-color: red; */
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 .news_and_insights_content_section_searchbar {
   height: 65px;
@@ -41,22 +41,22 @@
 }
 .news_and_insights_content_section_searchbar > input {
   height: 100%;
-  padding: 0 10% 0 20%;
-  width: 70%;
-  font-family: 'Pppins','Cairo';
+  padding: 0 20% 0 20%;
+  width: 60%;
+  font-family: "Poppins", "Cairo";
   /* width: 280px; */
   font-size: 18px;
   border-radius: 8px;
-  border: 1px solid rgb(165, 165, 165);
+  border: 1px solid rgba(165, 165, 165, 0.534);
 }
 .news_and_insights_content_section_searchbar > input:focus {
   outline: none;
 }
 .news_and_insights_content_section_searchbar_icon {
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: auto;
   position: absolute;
-  left: 30px;
+  left: 35px;
   transform: translateY(-50%);
   top: 50%;
 }
@@ -65,11 +65,12 @@
   height: 65px;
   position: relative;
   background-color: white;
-  padding: 0 60px 0 20px;
+  padding: 0 55px 0 25px;
   width: 190px;
-  font-size: 18px;
+  font-size: 16px;
+  color: #686868;
   border-radius: 8px;
-  border: 1px solid rgb(165, 165, 165);
+  border: 1px solid rgba(165, 165, 165, 0.562);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -78,7 +79,7 @@
   height: 9px;
   width: auto;
   position: absolute;
-  right: 30px;
+  right: 20px;
   transform: translateY(-50%);
   top: 50%;
 }
@@ -119,8 +120,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
-  top: 8%;
+  font-size: 12px;
+  top: 7%;
+  font-family: "Poppins", "Cairo";
   left: 7%;
   z-index: 1;
   color: #525252;
@@ -130,12 +132,12 @@
   width: 85%;
   position: absolute;
   font-size: 16px;
-  bottom: 10%;
+  bottom: 15%;
   left: 7%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   font-weight: 300;
   font-family: "Poppins", "Cairo";
 }

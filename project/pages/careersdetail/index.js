@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import careersdetails from "@/styles/careersdetails.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
   const [fileHandler, setFileHandler] = useState();
   const inputFileHandler = (e) => {
     setFileHandler(e.target.files[0].name);
   };
 
   return (
-    <div>
+    <div className={lang == "en" ? "ltr" : "rtl"}>
       {/* //Careers_image_body/ */}
       <div
         className="image_body"
@@ -243,9 +250,11 @@ const Index = () => {
                   }
                 />
                 <div
-                  className={
-                    careersdetails.careers_details_content_body_rightside_content_input_file
-                  }
+                  className={`${
+                    lang == "en"
+                      ? `${careersdetails.careers_details_content_body_rightside_content_input_file}`
+                      : `${careersdetails.careers_details_content_body_rightside_content_input_file_ar}`
+                  }`}
                 >
                   {fileHandler ? fileHandler : "Attach Resume"}
                   <input

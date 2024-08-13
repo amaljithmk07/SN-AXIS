@@ -191,6 +191,7 @@ const Index = () => {
                       width={20}
                       alt=""
                       src="/images/btn-right-arrow.png"
+                      className={` ${lang == "ar" ? "img_flip" : ""}`}
                     />
                   </button>
                   <button
@@ -203,6 +204,7 @@ const Index = () => {
                       width={20}
                       alt=""
                       src="/images/btn-right-arrow.png"
+                      className={` ${lang == "ar" ? "img_flip" : ""}`}
                     />
                   </button>
                 </div>
@@ -439,6 +441,7 @@ const Index = () => {
                   src={"/images/btn-arrow.png"}
                   height={15}
                   width={10}
+                  className={` ${lang == "ar" ? "img_flip" : ""}`}
                 />
               </button>
               <button
@@ -451,6 +454,7 @@ const Index = () => {
                   src={"/images/btn-arrow.png"}
                   height={15}
                   width={10}
+                  className={` ${lang == "ar" ? "img_flip" : ""}`}
                 />{" "}
               </button>
             </div>

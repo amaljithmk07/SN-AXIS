@@ -192,7 +192,7 @@
   transition: all 0.3s ease-in-out;
   z-index: 1;
   height: 13px;
-  width: 15px;
+  width: auto;
 }
 
 .wealth_featured_insight_btn:hover > img {

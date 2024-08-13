@@ -13,23 +13,6 @@
   font-family: "Poppins", "Cairo";
 }
 
-/* //////// */
-
-.news_and_insights_detail_image_body {
-  height: 540px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.news_and_insights_detail_image_body > span > h1 {
-  font-size: 55px;
-  color: white;
-  padding-bottom: 50px;
-  width: 100%;
-  letter-spacing: -1px;
-}
 
 /* //// */
 .news_and_insights_detail_content_body {
@@ -39,7 +22,7 @@
   /* background-color: red; */
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
 }
 
 .news_and_insights_detail_path_sec {

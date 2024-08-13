@@ -25,6 +25,7 @@
   letter-spacing: -1px;
 }
 /* ///// */
+.wealth_togglebar_container_section_ar,
 .wealth_togglebar_container_section {
   width: 100%;
   padding-top: 140px;
@@ -41,6 +42,15 @@
 
   position: relative;
   overflow: hidden;
+}
+.wealth_togglebar_container_section_ar {
+  background: linear-gradient(
+    to left,
+    #191c40 0%,
+    #191c40 45%,
+    #ffffff 45%,
+    #fdfdfd 45%
+  );
 }
 .wealth_togglebar_sec {
   min-height: 60px;
@@ -115,6 +125,17 @@
 .wealth_toggle_wealth_management_data_sec {
   width: 760px;
   padding-left: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: rgb(238, 221, 255); */
+}
+.wealth_toggle_wealth_management_data_sec_ar {
+  width: 760px;
+  padding-right: 70px;
 
   display: flex;
   justify-content: center;

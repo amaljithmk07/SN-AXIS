@@ -40,7 +40,13 @@ const Index = () => {
         {/* //////// */}
 
         <div className={Navbar.top_nav}>
-          <div className={`${Navbar.top_nav_container} container `}>
+          <div
+            className={`${
+              lang == "en"
+                ? `${Navbar.top_nav_container}`
+                : `${Navbar.top_nav_container_ar}`
+            } container  `}
+          >
             <span>Phone : +971 123 1234</span>
             <span>Email : snaxis@example.com</span>
           </div>
@@ -98,7 +104,9 @@ const Index = () => {
                         width={12}
                         alt=""
                         src="/images/top-right-arrow.png"
-                        className={Navbar.top_right_arrow_icon}
+                        className={`${Navbar.top_right_arrow_icon} ${
+                          lang == "ar" ? `img_rotate` : ``
+                        }`}
                       />
                     </li>
                     <li>
@@ -112,7 +120,9 @@ const Index = () => {
                         width={12}
                         alt=""
                         src="/images/top-right-arrow.png"
-                        className={Navbar.top_right_arrow_icon}
+                        className={`${Navbar.top_right_arrow_icon} ${
+                          lang == "ar" ? `img_rotate` : ``
+                        }`}
                       />
                     </li>
                     <li>
@@ -126,7 +136,9 @@ const Index = () => {
                         width={12}
                         alt=""
                         src="/images/top-right-arrow.png"
-                        className={Navbar.top_right_arrow_icon}
+                        className={`${Navbar.top_right_arrow_icon} ${
+                          lang == "ar" ? `img_rotate` : ``
+                        }`}
                       />
                     </li>
                   </ul>
@@ -225,7 +237,9 @@ const Index = () => {
                           width={12}
                           alt=""
                           src="/images/top-right-arrow.png"
-                          className={Navbar.top_right_arrow_icon}
+                          className={`${Navbar.top_right_arrow_icon} ${
+                            lang == "ar" ? `img_rotate` : ``
+                          }`}
                         />
                       </li>
                       <li>
@@ -241,7 +255,9 @@ const Index = () => {
                           width={12}
                           alt=""
                           src="/images/top-right-arrow.png"
-                          className={Navbar.top_right_arrow_icon}
+                          className={`${Navbar.top_right_arrow_icon} ${
+                            lang == "ar" ? `img_rotate` : ``
+                          }`}
                         />
                       </li>
                       <li>
@@ -257,7 +273,9 @@ const Index = () => {
                           width={12}
                           alt=""
                           src="/images/top-right-arrow.png"
-                          className={Navbar.top_right_arrow_icon}
+                          className={`${Navbar.top_right_arrow_icon} ${
+                            lang == "ar" ? `img_rotate` : ``
+                          }`}
                         />
                       </li>
                     </>

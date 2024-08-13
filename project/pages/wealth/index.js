@@ -5,15 +5,22 @@ import "aos/dist/aos.css";
 import Featured from "../featuredInsights";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Index = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setLang(router.locale);
+  }, []);
+  const [lang, setLang] = useState();
+
   useEffect(() => {
     AOS.init();
   });
   ///
 
   return (
-    <div>
+    <div className={`${lang == "en" ? "ltr" : "rtl"}`}>
       {/* //wealth_image_body/ */}
       <div
         className="image_body"
@@ -27,7 +34,13 @@ const Index = () => {
       </div>
 
       {/* //wealth_pioneering_excellence_together_section// */}
-      <div className={wealth.wealth_togglebar_container_section}>
+      <div
+        className={`${
+          lang == "en"
+            ? `${wealth.wealth_togglebar_container_section}`
+            : `${wealth.wealth_togglebar_container_section_ar}`
+        }`}
+      >
         <div className="togglebar_sec">
           <Link href="wealth" className="togglebar_data_active">
             Wealth Management
@@ -70,7 +83,11 @@ const Index = () => {
             </div>
           </div>
           <div
-            className={wealth.wealth_toggle_wealth_management_data_sec}
+            className={`${
+              lang == "en"
+                ? `${wealth.wealth_toggle_wealth_management_data_sec}`
+                : `${wealth.wealth_toggle_wealth_management_data_sec_ar}`
+            }`}
             data-aos="fade-left"
           >
             <div

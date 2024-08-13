@@ -17,7 +17,7 @@ import { useRouter } from "next/router";
 
 // https://www.figma.com/design/BD28KjVfn1vEU7fBmPhFyx/SN-axis-Option-(Copy)?node-id=0-1&t=qiyOIPo6Uk5loiVn-0
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   useEffect(() => {
     setLang(router.locale);

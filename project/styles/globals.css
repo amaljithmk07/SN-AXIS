@@ -242,6 +242,8 @@ h4 {
     left: 7%;
   }
   .right35 {
+    top: 30% !important;
+
     right: 7%;
     /* background-color: rebeccapurple; */
   }

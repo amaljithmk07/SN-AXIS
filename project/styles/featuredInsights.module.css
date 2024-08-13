@@ -253,7 +253,7 @@
     padding-top: 45px;
     padding-bottom: 45px;
   }
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 43px;
     font-size: 40px;
   }
@@ -288,7 +288,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 40px;
     font-size: 40px;
   }
@@ -303,7 +303,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 40px;
     font-size: 38px;
   }
@@ -347,7 +347,7 @@
 }
 
 @media screen and (max-width: 950px) {
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 32px;
     font-size: 31px;
   }
@@ -391,7 +391,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 28px;
     font-size: 26px;
   }
@@ -405,7 +405,7 @@
   .wealth_featured_insight_card_container {
     width: 94%;
   }
-  .wealth_featured_insight_title {
+  .wealth_featured_insight_title > h2 {
     line-height: 27px;
     font-size: 26px;
   }

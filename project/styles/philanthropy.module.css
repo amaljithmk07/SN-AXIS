@@ -391,6 +391,7 @@
 }
 
 @media screen and (max-width: 500px) {
+  .philanthropy_toggle_container_ar,
   .philanthropy_toggle_container {
     flex-direction: column-reverse;
     background: linear-gradient(

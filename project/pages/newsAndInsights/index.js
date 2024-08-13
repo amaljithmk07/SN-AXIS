@@ -34,9 +34,12 @@ const Index = () => {
           }
         >
           <div
-            className={
-              newsAndInsights.news_and_insights_content_section_searchbar
-            }
+            className={`${
+              lang == "ar"
+                ? `${newsAndInsights.news_and_insights_content_section_searchbar_ar}`
+                : `${newsAndInsights.news_and_insights_content_section_searchbar}
+            `
+            }`}
           >
             <input placeholder="Search..." type="text" />
             {/* <img

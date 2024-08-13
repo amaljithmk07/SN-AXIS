@@ -332,6 +332,7 @@
   .wealth_realising_wealths_content_card_body {
     gap: 10px;
   }
+  .wealth_togglebar_container_section_ar,
   .wealth_togglebar_container_section {
     padding-top: 90px;
     padding-bottom: 45px;
@@ -339,6 +340,7 @@
   .wealth_toggle_wealth_management_img_sec {
     width: 45%;
   }
+  .wealth_toggle_wealth_management_data_sec_ar,
   .wealth_toggle_wealth_management_data_sec {
     width: 55%;
   }
@@ -427,18 +429,25 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .wealth_togglebar_container_section_ar,
   .wealth_togglebar_container_section {
     padding-top: 75px;
     padding-bottom: 45px;
+  }
+  .wealth_toggle_wealth_management_data_sec_ar,
+  .wealth_toggle_wealth_management_data_sec {
+    padding: 0;
   }
   .wealth_toggle_wealth_management_sec {
     gap: 25px;
     flex-direction: column-reverse;
   }
   .wealth_toggle_wealth_management_img_sec,
+  .wealth_toggle_wealth_management_data_sec_ar,
   .wealth_toggle_wealth_management_data_sec {
     width: 100%;
   }
+  .wealth_togglebar_container_section_ar,
   .wealth_togglebar_container_section {
     background: linear-gradient(
       to top,
@@ -488,6 +497,7 @@
   .wealth_realising_wealths_content_card_body {
     width: 100%;
   }
+  .wealth_togglebar_container_section_ar,
   .wealth_togglebar_container_section {
     padding-top: 65px;
     padding-bottom: 35px;

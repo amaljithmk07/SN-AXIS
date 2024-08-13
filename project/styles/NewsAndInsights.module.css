@@ -34,11 +34,13 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+.news_and_insights_content_section_searchbar_ar,
 .news_and_insights_content_section_searchbar {
   height: 65px;
   width: 350px;
   position: relative;
 }
+.news_and_insights_content_section_searchbar_ar > input,
 .news_and_insights_content_section_searchbar > input {
   height: 100%;
   padding: 0 20% 0 20%;
@@ -49,6 +51,7 @@
   border-radius: 8px;
   border: 1px solid rgba(165, 165, 165, 0.534);
 }
+.news_and_insights_content_section_searchbar_ar > input:focus,
 .news_and_insights_content_section_searchbar > input:focus {
   outline: none;
 }
@@ -56,7 +59,8 @@
   height: 20px;
   width: auto;
   position: absolute;
-  /* left: 35px; */
+  /* left: 35px;
+  right: 35px; */
   transform: translateY(-50%);
   top: 50%;
 }
@@ -124,6 +128,7 @@
   top: 7%;
   font-family: "Poppins", "Cairo";
   left: 7%;
+  right: 7%;
   z-index: 1;
   color: #525252;
   background-color: rgb(255, 255, 255);
@@ -147,6 +152,7 @@
 /* ////////Responsive area */
 
 @media screen and (max-width: 1600px) {
+  .news_and_insights_content_section_searchbar_ar,
   .news_and_insights_content_section_searchbar {
     height: 55px;
     width: 300px;
@@ -175,14 +181,21 @@
     padding-top: 35px;
     padding-bottom: 35px;
   }
+  .news_and_insights_content_section_searchbar_ar,
   .news_and_insights_content_section_searchbar {
     height: 45px;
     width: 270px;
   }
+
   .news_and_insights_content_section_searchbar_icon {
     height: 18px;
     width: 18px;
-    /* left: 6%; */
+  }
+  .news_and_insights_content_section_searchbar_ar > input {
+    font-size: 15px;
+    width: 80%;
+    /* background-color: red; */
+    padding: 0px 20% 0 0%;
   }
   .news_and_insights_content_section_searchbar > input {
     font-size: 15px;
@@ -209,7 +222,9 @@
   .news_and_insights_content_section {
     padding-top: 25px;
     padding-bottom: 35px;
+    gap: 30px;
   }
+  .news_and_insights_content_section_searchbar_ar,
   .news_and_insights_content_section_searchbar {
     height: 40px;
     width: 200px;
@@ -217,10 +232,15 @@
   .news_and_insights_content_section_searchbar_icon {
     height: 16px;
     width: 16px;
-    left: 7%;
+    /* left: 7%; */
+  }
+  .news_and_insights_content_section_searchbar_ar > input {
+    font-size: 13px;
+    width: 80%;
+    padding: 0px 18% 0 2%;
   }
   .news_and_insights_content_section_searchbar > input {
-    font-size: 14px;
+    font-size: 13px;
     width: 80%;
     padding: 0px 2% 0 18%;
   }
@@ -254,7 +274,9 @@
   .news_and_insights_content_section {
     padding-top: 15px;
     padding-bottom: 35px;
+    gap: 20px;
   }
+  .news_and_insights_content_section_searchbar_ar,
   .news_and_insights_content_section_searchbar {
     height: 35px;
     width: 160px;
@@ -300,6 +322,7 @@
   .news_and_insights_insight_card {
     width: 100%;
   }
+  .news_and_insights_content_section_searchbar_ar,
   .news_and_insights_content_section_searchbar {
     height: 33px;
     width: 150px;

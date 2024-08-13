@@ -153,7 +153,7 @@ const Index = () => {
           className={` ${
             lang == "en"
               ? `${about.about_our_mission_section}`
-              : `${about.about_our_mission_section_rtl}`
+              : `${about.about_our_mission_section_ar}`
           }`}
         >
           <div

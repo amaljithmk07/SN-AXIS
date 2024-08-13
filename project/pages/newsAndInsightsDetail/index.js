@@ -38,7 +38,13 @@ const Index = () => {
           className={`${newsAndInsights.news_and_insights_detail_path_sec}  font_playfair`}
         >
           News Insights{" "}
-          <Image alt="" height={13} width={8} src="/images/path-icon.png" />{" "}
+          <Image
+            alt=""
+            height={13}
+            width={8}
+            src="/images/path-icon.png"
+            className={lang == "ar" ? "img_flip" : ""}
+          />{" "}
           Category
         </div>
         <div

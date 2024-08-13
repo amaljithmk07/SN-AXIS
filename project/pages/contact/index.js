@@ -46,7 +46,13 @@ const Index = () => {
             </div>
             <div className={contact.contact_detail_content_sec_left_data}>
               {/* <img src="/images/call.png" /> */}
-              <Image height={25} width={25} alt="" src="/images/call.png" />
+              <Image
+                height={25}
+                width={25}
+                alt=""
+                src="/images/call.png"
+                className={lang == "ar" ? "img_rotate" : ""}
+              />
               +971 4 413 06 19
             </div>
           </div>

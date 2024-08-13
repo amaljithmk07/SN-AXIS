@@ -54,7 +54,7 @@ const Index = () => {
             className={
               lang == "en"
                 ? `${banking.banking_toggle_container}`
-                : `${banking.banking_toggle_container_rtl}`
+                : `${banking.banking_toggle_container_ar}`
             }
           >
             <div className={banking.banking_toggle_img_sec}>
@@ -71,7 +71,7 @@ const Index = () => {
               className={
                 lang == "en"
                   ? `${banking.banking_toggle_data_sec}`
-                  : `${banking.banking_toggle_data_sec_rtl}`
+                  : `${banking.banking_toggle_data_sec_ar}`
               }
               data-aos="fade-left"
             >

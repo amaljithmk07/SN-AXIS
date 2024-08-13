@@ -53,7 +53,7 @@
   align-items: center;
   overflow: hidden;
 }
-.banking_toggle_container_rtl {
+.banking_toggle_container_ar {
   width: 100%;
   display: flex;
   background: linear-gradient(
@@ -89,7 +89,7 @@
   gap: 30px;
   color: #ffffff;
 }
-.banking_toggle_data_sec_rtl {
+.banking_toggle_data_sec_ar {
   width: 50%;
   padding-right: 5%;
   display: flex;
@@ -411,6 +411,7 @@
 }
 
 @media screen and (max-width: 500px) {
+  .banking_toggle_container_ar,
   .banking_toggle_container {
     flex-direction: column;
     gap: 20px;
@@ -427,9 +428,10 @@
     height: 250px;
     width: 90%;
   }
+  .banking_toggle_data_sec_ar,
   .banking_toggle_data_sec {
     width: 90%;
-    padding-left: 0%;
+    padding: 0%;
   }
   .banking_toggle_data_title > h2 {
     font-size: 15px;

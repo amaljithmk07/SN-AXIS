@@ -15,6 +15,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 import { useRouter } from "next/router";
+import Link from "next/link";
 const Index = () => {
   const router = useRouter();
   useEffect(() => {
@@ -365,7 +366,8 @@ const Index = () => {
                 />
               </button>
             </div>
-            <button
+            <Link
+              href={"/newsAndInsights"}
               className={`${featuredInsights.wealth_featured_insight_btn} font_poppins`}
             >
               <div
@@ -382,7 +384,7 @@ const Index = () => {
                 alt=""
                 className={lang == "ar" ? "img_flip" : ""}
               />
-            </button>
+            </Link>
             {/* /// */}
           </div>
         </div>

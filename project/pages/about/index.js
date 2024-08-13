@@ -258,13 +258,22 @@ const Index = () => {
 
             <div className={about.about_our_history_container_sec}>
               <Swiper
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={10}
+                dir={
+                  router.locale == "ar" || router.locale == "rtl"
+                    ? "rtl"
+                    : "ltr"
+                }
                 navigation={{
                   nextEl: "#next_btn",
                   prevEl: "#prev_btn",
                 }}
                 breakpoints={{
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                  },
                   768: {
                     slidesPerView: 2,
                     spaceBetween: 5,

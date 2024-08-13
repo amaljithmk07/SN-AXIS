@@ -250,8 +250,11 @@ export default function Page() {
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={20}
-                  // dir="rtl"
-                  // dir={`${lang == "ar" ? "rtl" : ""}`}
+                  dir={
+                    router.locale == "ar" || router.locale == "rtl"
+                      ? "rtl"
+                      : "ltr"
+                  }
                   // navigation={true}
                   navigation={{
                     prevEl: "#next_btn",

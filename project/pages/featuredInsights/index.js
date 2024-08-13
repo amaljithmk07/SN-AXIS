@@ -15,14 +15,12 @@ import { Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 import { useRouter } from "next/router";
-
 const Index = () => {
   const router = useRouter();
   useEffect(() => {
     setLang(router.locale);
   }, []);
   const [lang, setLang] = useState();
-
   return (
     <div>
       <div className={`${featuredInsights.wealth_featured_insight_section}`}>
@@ -50,7 +48,11 @@ const Index = () => {
               <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
-                // navigation={true}
+                dir={
+                  router.locale == "ar" || router.locale == "rtl"
+                    ? "rtl"
+                    : "ltr"
+                } // navigation={true}
                 breakpoints={{
                   480: {
                     slidesPerView: 2,

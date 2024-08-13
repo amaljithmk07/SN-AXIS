@@ -318,6 +318,7 @@
   .wealth_realising_wealths_section {
     padding-top: 50px;
     padding-bottom: 50px;
+    gap: 25px;
   }
   .wealth_featured_insight_card_btn_sec {
     gap: 21px;

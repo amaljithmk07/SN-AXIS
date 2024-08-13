@@ -530,6 +530,7 @@
 
   .navbar_logo {
     height: 47px;
+    width: auto;
   }
   .navbar_hamb_main {
     height: 37px;

@@ -290,6 +290,8 @@
   }
   .careers_details_content_title_timer_body > img {
     height: 20px;
+    width: auto;
+
   }
   .careers_details_content_body_leftside {
     gap: 65px;
@@ -441,6 +443,8 @@
   }
   .careers_details_content_title_timer_body > img {
     height: 17px;
+    width: auto;
+
   }
   .careers_details_content_body_leftside_content > li {
     line-height: 25px;
@@ -505,8 +509,13 @@
   }
   .careers_details_content_body_leftside_content_sec,
   .careers_details_content_body_rightside_content_sec {
+    width: 100%;
     gap: 10px;
     min-height: 200px;
+  }
+  .careers_details_content_body_leftside,
+  .careers_details_content_body_rightside {
+    width: 100%;
   }
   .careers_details_content_body_rightside_content,
   .careers_details_content_body_rightside_title > h3 {
@@ -552,6 +561,8 @@
   }
   .careers_details_content_title_timer_body > img {
     height: 14px;
+    width: auto;
+
   }
   .careers_details_content_title_timer_body {
     font-size: 11px;

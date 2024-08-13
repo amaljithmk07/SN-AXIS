@@ -105,6 +105,11 @@ const Index = () => {
               <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
+                dir={
+                  router.locale == "ar" || router.locale == "rtl"
+                    ? "rtl"
+                    : "ltr"
+                }
                 breakpoints={{
                   500: {
                     slidesPerView: 2,

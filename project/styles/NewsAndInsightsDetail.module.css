@@ -13,7 +13,6 @@
   font-family: "Poppins", "Cairo";
 }
 
-
 /* //// */
 .news_and_insights_detail_content_body {
   width: 100%;
@@ -131,6 +130,7 @@
   font-size: 13px;
   top: 8%;
   left: 8%;
+  right: 8%;
   z-index: 1;
   color: #525252;
   background-color: rgb(255, 255, 255);

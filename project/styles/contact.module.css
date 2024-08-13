@@ -176,6 +176,7 @@
   }
   .contact_detail_content_sec_left_data > img {
     height: 18px;
+    width: auto;
   }
   .contact_detail_content_body {
     padding-top: 0px;

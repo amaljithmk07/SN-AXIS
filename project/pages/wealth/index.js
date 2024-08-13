@@ -20,7 +20,8 @@ const Index = () => {
   ///
 
   return (
-    <div className={`${lang == "en" ? "ltr" : "rtl"}`}>
+    <div className={`${lang == "ar" ? "rtl" : "ltr"}`}>
+      {/* <div> */}
       {/* //wealth_image_body/ */}
       <div
         className="image_body"

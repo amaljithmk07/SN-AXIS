@@ -12,7 +12,7 @@ const Index = () => {
   const [lang, setLang] = useState();
 
   return (
-    <div className={lang == "en" ? "ltr" : "rtl"}>
+    <div className={lang == "ar" ? "rtl" : "ltr"}>
       {/* //banking_image_body/ */}
       <div
         className="image_body"

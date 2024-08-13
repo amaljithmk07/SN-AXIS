@@ -15,7 +15,7 @@ const Index = () => {
   };
 
   return (
-    <div className={lang == "en" ? "ltr" : "rtl"}>
+    <div className={lang == "ar" ? "rtl" : "ltr"}>
       {/* //Careers_image_body/ */}
       <div
         className="image_body"

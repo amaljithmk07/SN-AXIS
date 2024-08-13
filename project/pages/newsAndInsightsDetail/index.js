@@ -19,7 +19,7 @@ const Index = () => {
 
   console.log(lang);
   return (
-    <div className={lang == "en" ? "ltr" : "rtl"}>
+    <div className={lang == "ar" ? "rtl" : "ltr"}>
       <div
         className="image_body"
         style={{ background: `url(/images/news-and-insights.png) bottom` }}

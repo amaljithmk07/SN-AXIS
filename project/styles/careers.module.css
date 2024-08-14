@@ -300,6 +300,11 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 500px) {
+  .careers_section {
+    gap: 20px;
+  }
+}
 /* @media screen and (max-width: 320px) { */
 @media screen and (max-width: 480px) {
   .careers_title > h2 {

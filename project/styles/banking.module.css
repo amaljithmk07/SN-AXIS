@@ -452,6 +452,12 @@
   .banking_realising_wealth_card {
     width: 100%;
   }
+  .banking_realising_wealth_card_paragraph {
+    font-size: 18px;
+  }
+  .banking_realising_wealth_card_paragraph > p {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 400px) {
   .banking_realising_wealth_title > h2 {

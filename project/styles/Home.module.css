@@ -940,7 +940,10 @@
     width: 80%;
     gap: 10px;
   }
-
+  .main_area_of_focus_card_arrow_btn {
+    height: 30px;
+    width: 30px;
+  }
   .main_discovery_legacy_section {
     height: 50vh;
   }

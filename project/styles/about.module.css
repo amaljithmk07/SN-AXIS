@@ -808,7 +808,7 @@
   .about_pioneering_excellence_together_title_sec {
     /* background-color: #191c40; */
     width: 90%;
-    padding: 30px 0;
+    padding: 10px 0 20px 0;
   }
 
   .about_our_mission_section_ar,
@@ -874,7 +874,7 @@
   .about_core_values_title {
     min-height: unset;
     padding-bottom: 5px;
-}
+  }
   .about_our_history_container_data_title,
   .about_our_history_container_data_title_active {
     font-size: 27px;

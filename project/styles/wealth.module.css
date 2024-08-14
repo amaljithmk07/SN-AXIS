@@ -203,6 +203,7 @@
 }
 .wealth_realising_wealths_content_card_body > img {
   width: 100%;
+  height: auto;
 }
 .wealth_realising_wealths_content_card_body:hover {
   background-color: #b29758;

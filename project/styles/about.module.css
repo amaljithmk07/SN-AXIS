@@ -824,13 +824,14 @@
   }
   .about_our_mission_title {
     color: black;
+    top: 15px;
   }
   .about_our_mission_container {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
     gap: 15px;
-    padding-top: 90px;
+    padding-top: 80px;
   }
   .about_our_mission_container_content {
     width: 100%;

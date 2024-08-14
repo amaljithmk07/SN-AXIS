@@ -33,7 +33,7 @@
   font-size: 20px;
 }
 
-  .news_and_insights_detail_path_sec>a {
+.news_and_insights_detail_path_sec > a {
   /* background-color: red; */
   text-decoration: none;
   color: black;
@@ -308,4 +308,18 @@
   .news_and_insights_detail_title > h2 {
     font-size: 21px;
   }
+  .news_and_insights_detail_card_data > span,
+  .news_and_insights_detail_card_data {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  
+  .news_and_insights_detail_card_data > span,
+  .news_and_insights_detail_card_data {
+    font-size: 12px;
+  }
+
+
 }

@@ -813,7 +813,7 @@
 
   .about_our_mission_section_ar,
   .about_our_mission_section {
-    margin-top: 0px;
+    margin: 0px;
     background: linear-gradient(
       to top,
       #191c40 1%,
@@ -840,15 +840,30 @@
     height: 300px;
     width: 100%;
   }
+  .about_our_mission_container_content {
+    gap: 10px;
+    padding-bottom: 5%;
+  }
   .about_our_mission_title,
   .about_core_values_title,
   .about_our_history_title {
     font-size: 25px;
     line-height: 35px;
   }
+  .about_our_history_section {
+    min-height: unset;
+    padding: 0;
+  }
+  .about_our_history_title {
+    font-size: 25px;
+    line-height: 35px;
+    height: unset;
+    padding: 0;
+  }
   .about_core_values_container {
     padding-bottom: 45px;
-    gap: 25px;
+    padding-top: 20px;
+    gap: 15px;
   }
   .about_our_mission_title {
     min-height: unset;
@@ -858,22 +873,32 @@
   }
   .about_core_values_title {
     min-height: unset;
-  }
+    padding-bottom: 5px;
+}
   .about_our_history_container_data_title,
   .about_our_history_container_data_title_active {
     font-size: 27px;
   }
-
-  .about_our_history_container_data {
-    height: 100%;
-    width: 100%;
+  .about_core_values_card_body {
+    gap: 15px;
   }
   .about_core_values_card_title {
-    margin-top: 30px;
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
   }
+
+  .about_our_history_container_data {
+    /* height: 100%; */
+    width: 100%;
+  }
+  .about_our_history_container_sec {
+    height: unset;
+  }
+
   .about_our_history_container {
-    min-height: 300px;
-    gap: 16px;
+    min-height: unset;
+    gap: 15px;
   }
   .about_our_history_btn_sec {
     height: unset;

@@ -512,7 +512,7 @@
 @media screen and (max-width: 400px) {
   .top_nav_container_ar > span,
   .top_nav_container > span {
-    font-size: 10px;
+    font-size: 12px;
     padding: 0 7px;
   }
 }

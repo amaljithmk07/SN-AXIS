@@ -333,6 +333,24 @@
     width: 100px;
   }
 }
+@media screen and (max-width: 500px) {
+  .news_and_insights_insight_card_data {
+    bottom: 8%;
+    left: 7%;
+  }
+  .news_and_insights_insight_card_data {
+    font-size: 12px;
+  }
+  .news_and_insights_insight_card_data > span {
+    font-size: 13px;
+  }
+  .news_and_insights_detail_card_data {
+    font-size: 12px;
+  }
+  .news_and_insights_detail_card_data > span {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 450px) {
   .news_and_insights_insight_card {
     width: 100%;

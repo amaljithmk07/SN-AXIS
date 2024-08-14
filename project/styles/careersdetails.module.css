@@ -291,7 +291,6 @@
   .careers_details_content_title_timer_body > img {
     height: 20px;
     width: auto;
-
   }
   .careers_details_content_body_leftside {
     gap: 65px;
@@ -444,7 +443,6 @@
   .careers_details_content_title_timer_body > img {
     height: 17px;
     width: auto;
-
   }
   .careers_details_content_body_leftside_content > li {
     line-height: 25px;
@@ -488,7 +486,7 @@
     font-size: 27px;
   }
   .careers_details_content_title {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     gap: 2px;
   }
   .careers_details_content_title_timer_clock_post_sec {
@@ -507,7 +505,11 @@
   .careers_details_content_body {
     flex-direction: column;
   }
-  .careers_details_content_body_leftside_content_sec,
+  .careers_details_content_body_leftside_content_sec {
+    width: 100%;
+    gap: 0px;
+    min-height: 200px;
+  }
   .careers_details_content_body_rightside_content_sec {
     width: 100%;
     gap: 10px;
@@ -523,14 +525,20 @@
     padding-left: 0%;
   }
   .careers_details_content_body_leftside_content > li {
-    line-height: 25px;
-    font-size: 12px;
+    line-height: normal;
+    font-size: 13px;
   }
   .careers_details_content_body_rightside_content_input,
   .careers_details_content_body_rightside_content_input_file_ar,
   .careers_details_content_body_rightside_content_input_file {
     height: 29px;
     font-size: 12px;
+  }
+  .careers_details_content_body_leftside_content {
+    gap: 0px;
+  }
+  .careers_details_content_body_rightside_content_submit_btn {
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -544,9 +552,11 @@
   .careers_details_content_body_leftside {
     gap: 15px;
   }
-  .careers_details_content_body_leftside,
-  .careers_details_content_body_rightside {
+  .careers_details_content_body_leftside {
     padding-top: 10px;
+  }
+  .careers_details_content_body_rightside {
+    padding-top: 15px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -562,7 +572,6 @@
   .careers_details_content_title_timer_body > img {
     height: 14px;
     width: auto;
-
   }
   .careers_details_content_title_timer_body {
     font-size: 11px;

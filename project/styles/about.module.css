@@ -628,7 +628,8 @@
     width: 300px;
   }
   .about_core_values_card_body {
-    height: 200px;
+    height: unset;
+    padding-bottom: 30px;
   }
   .about_core_values_card_title {
     font-size: 18px;
@@ -866,6 +867,9 @@
   .about_our_history_container_data {
     height: 100%;
     width: 100%;
+  }
+  .about_core_values_card_title {
+    margin-top: 30px;
   }
   .about_our_history_container {
     min-height: 300px;

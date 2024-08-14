@@ -457,7 +457,7 @@
   }
   .top_nav_container_ar > span,
   .top_nav_container > span {
-    font-size: 10px;
+    font-size: 12px;
     padding: 0 7px;
   }
   .navbar_container {
@@ -507,6 +507,13 @@
   .navbar_hamb_main {
     height: 40px;
     width: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .top_nav_container_ar > span,
+  .top_nav_container > span {
+    font-size: 10px;
+    padding: 0 7px;
   }
 }
 @media screen and (max-width: 320px) {

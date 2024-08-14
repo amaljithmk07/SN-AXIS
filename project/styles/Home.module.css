@@ -957,6 +957,7 @@
   }
   .main_pioneering_excellence_title {
     min-height: 10px;
+    padding-bottom: 0px;
   }
   .main_pioneering_excellence_title > h2 {
     font-size: 25px;
@@ -968,7 +969,8 @@
   }
   .main_pioneering_excellence_paragraph {
     gap: 7px;
-    font-size: 11px;
+    line-height: normal;
+    font-size: 12px;
     letter-spacing: 0;
   }
   .main_area_of_focus_section {
@@ -1003,7 +1005,7 @@
     width: 80%;
   }
   .main_news_and_insight_card_btn_sec {
-    gap: 5px;
+    gap: 10px;
   }
   .main_news_and_insight_card_previous_btn,
   .main_news_and_insight_card_next_btn {

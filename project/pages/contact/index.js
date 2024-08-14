@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import contact from "@/styles/contact.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Index = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ const Index = () => {
     <div className={lang == "ar" ? "rtl" : "ltr"}>
       <div
         className="image_body"
-        style={{ background: `url(/images/Contact-background.png) bottom` }}
+        style={{ background: `url(/images/contact-background.png) bottom` }}
       >
         <span className="container">
           <h1> Contact</h1>
@@ -34,17 +35,23 @@ const Index = () => {
                 Have a question or need assistance? We &apos; re here to help!
               </span>
             </div>
-            <div className={contact.contact_detail_content_sec_left_data}>
+            <Link
+              href={"mailto:nfo@snaxis.com"}
+              className={contact.contact_detail_content_sec_left_data}
+            >
               {/* <img src="/images/mail.png" /> */}
               <Image height={20} width={25} alt="" src="/images/mail.png" />
               info@snaxis.com
-            </div>
+            </Link>
             <div className={contact.contact_detail_content_sec_left_data}>
               {/* <img src="/images/location.png" />  */}
               <Image height={25} width={25} alt="" src="/images/location.png" />
               Dubai – UAE
             </div>
-            <div className={contact.contact_detail_content_sec_left_data}>
+            <Link
+              href={"tel:+971 4 413 06 19"}
+              className={contact.contact_detail_content_sec_left_data}
+            >
               {/* <img src="/images/call.png" /> */}
               <Image
                 height={25}
@@ -54,7 +61,7 @@ const Index = () => {
                 className={lang == "ar" ? "img_rotate" : ""}
               />
               +971 4 413 06 19
-            </div>
+            </Link>
           </div>
 
           <div className={contact.contact_detail_content_sec_right}>

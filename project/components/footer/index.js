@@ -21,7 +21,7 @@ const Index = () => {
       >
         <div className={`${style.footer_content_sec} container`}>
           {/* <img src="/images/logo.png" className={style.footer_logo} /> */}
-          <div className={style.footer_logo}>
+          <Link href={"/"} className={style.footer_logo}>
             <Image
               alt="footer"
               src="/images/logo.png"
@@ -30,7 +30,7 @@ const Index = () => {
               height={99}
               className={style.footer_logo}
             />
-          </div>
+          </Link>
           <div className={style.footer_content}>
             <div className={`${style.footer_content_data} font_playfair`}>
               <h4>Quick Links </h4>
@@ -74,13 +74,15 @@ const Index = () => {
               <h4>Email</h4>
               <ul className={`${style.footer_content_list} font_poppins`}>
                 <li>
-                  <Link href="emailto:">snaxis@example.com </Link>
+                  <Link href="emailto:snaxis@example.com ">
+                    snaxis@example.com{" "}
+                  </Link>
                 </li>
               </ul>
               <h4>Phone</h4>
               <ul className={`${style.footer_content_list} font_poppins`}>
                 <li>
-                  <Link href="">+9156845465 </Link>
+                  <Link href="tel:9156845465">+9156845465 </Link>
                 </li>
               </ul>
             </div>
@@ -97,10 +99,18 @@ const Index = () => {
             <div>Copyright © 2024 SN AXIS. All Rights Reserved</div>
 
             <ul>
-              <li>Fraud Warning</li>
-              <li>Cookies Policy</li>
-              <li>Privacy Policy</li>
-              <li>Terms and Coditions</li>
+              <li>
+                <Link href={"/"}>Fraud Warning</Link>
+              </li>
+              <li>
+                <Link href={"/"}>Cookies Policy</Link>
+              </li>
+              <li>
+                <Link href={"/"}>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href={"/"}>Terms and Coditions</Link>
+              </li>
             </ul>
             {/* <div className={style.footer_privacy_border}></div> */}
           </div>

@@ -37,7 +37,7 @@ const Index = () => {
         <div
           className={`${newsAndInsights.news_and_insights_detail_path_sec}  font_playfair`}
         >
-          News Insights{" "}
+          <Link href={"/newsAndInsights"}>News Insights </Link>
           <Image
             alt=""
             height={13}
@@ -125,7 +125,7 @@ const Index = () => {
               >
                 <SwiperSlide>
                   <Link
-                    href={"/newsAndInsights"}
+                    href={"/newsAndInsightsDetail"}
                     className={newsAndInsights.news_and_insights_detail_card}
                   >
                     <div
@@ -176,7 +176,7 @@ const Index = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link
-                    href={"/newsAndInsights"}
+                    href={"/newsAndInsightsDetail"}
                     className={newsAndInsights.news_and_insights_detail_card}
                   >
                     <div
@@ -221,7 +221,7 @@ const Index = () => {
                 <SwiperSlide>
                   {" "}
                   <Link
-                    href={"/newsAndInsights"}
+                    href={"/newsAndInsightsDetail"}
                     className={newsAndInsights.news_and_insights_detail_card}
                   >
                     <div
@@ -265,7 +265,7 @@ const Index = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link
-                    href={"/newsAndInsights"}
+                    href={"/newsAndInsightsDetail"}
                     className={newsAndInsights.news_and_insights_detail_card}
                   >
                     <div
@@ -309,7 +309,7 @@ const Index = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link
-                    href={"/newsAndInsights"}
+                    href={"/newsAndInsightsDetail"}
                     className={newsAndInsights.news_and_insights_detail_card}
                   >
                     <div

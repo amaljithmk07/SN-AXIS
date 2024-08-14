@@ -33,6 +33,11 @@
   font-size: 20px;
 }
 
+  .news_and_insights_detail_path_sec>a {
+  /* background-color: red; */
+  text-decoration: none;
+  color: black;
+}
 .news_and_insights_detail_content_path_sec > img {
   height: 13px;
   width: auto;

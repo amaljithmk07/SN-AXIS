@@ -770,6 +770,11 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .about_about_our_history_section__ivVeC {
+    min-height: unset;
+    padding-top: 0px;
+  }
+
   .about_pioneering_excellence_together_title_1,
   .about_pioneering_excellence_together_title_2,
   .about_pioneering_excellence_together_title_3 {
@@ -824,7 +829,7 @@
     align-items: center;
     flex-direction: column-reverse;
     gap: 15px;
-    padding-top: 130px;
+    padding-top: 90px;
   }
   .about_our_mission_container_content {
     width: 100%;
@@ -840,14 +845,18 @@
     font-size: 25px;
     line-height: 35px;
   }
+  .about_core_values_container {
+    padding-bottom: 45px;
+    gap: 25px;
+  }
   .about_our_mission_title {
-    min-height: 75px;
+    min-height: unset;
   }
   .about_our_mission_container_content_title {
     font-size: 15px;
   }
   .about_core_values_title {
-    min-height: 50px;
+    min-height: unset;
   }
   .about_our_history_container_data_title,
   .about_our_history_container_data_title_active {
@@ -861,6 +870,9 @@
   .about_our_history_container {
     min-height: 300px;
     gap: 16px;
+  }
+  .about_our_history_btn_sec {
+    height: unset;
   }
   .about_our_history_btn {
     height: 35px;

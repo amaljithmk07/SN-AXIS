@@ -833,6 +833,7 @@
 
   .main_area_of_focus_card_title {
     font-size: 16px;
+    line-height: normal;
   }
   .main_news_and_insight_section {
     padding: 3% 0%;
@@ -939,6 +940,7 @@
     width: 80%;
     gap: 0px;
   }
+
   .main_discovery_legacy_section {
     height: 50vh;
   }
@@ -982,10 +984,16 @@
     height: 350px;
     width: 90%;
   }
+  .main_area_of_focus_card_title {
+    font-size: 19px;
+  }
   .main_area_of_focus_title_sec > h2 {
     font-size: 25px;
     line-height: normal;
-    min-height: 60px;
+    min-height: unset;
+  }
+  .main_area_of_focus_title_sec > h2 > br {
+    display: none;
   }
   .main_news_and_insight_title > h2 {
     font-size: 25px;
@@ -1084,7 +1092,7 @@
   .main_area_of_focus_title_sec > h2 {
     font-size: 24px;
     line-height: normal;
-    min-height: 60px;
+    /* min-height: 60px; */
   }
   .main_area_of_focus_section {
     min-height: 55vh;
@@ -1097,7 +1105,7 @@
   }
   .main_area_of_focus_card_body {
     min-height: 200px;
-    width: 80%;
+    width: 90%;
   }
   .main_news_and_insight_title > h2 {
     font-size: 24px;

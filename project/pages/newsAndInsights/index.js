@@ -3,6 +3,8 @@ import newsAndInsights from "@/styles/NewsAndInsights.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Index = () => {
   const router = useRouter();
@@ -12,6 +14,13 @@ const Index = () => {
   const [lang, setLang] = useState();
 
   console.log(lang);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      delay: 1000,
+    });
+  }, []);
   return (
     <div className={lang == "ar" ? "rtl" : "ltr"}>
       <div
@@ -89,6 +98,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -115,6 +126,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -141,6 +154,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="1000"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -167,6 +182,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -193,6 +210,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -219,6 +238,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="1000"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -245,6 +266,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -271,6 +294,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -297,6 +322,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="1000"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -323,6 +350,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -349,6 +378,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}
@@ -375,6 +406,8 @@ const Index = () => {
           <Link
             href={"/newsAndInsightsDetail"}
             className={newsAndInsights.news_and_insights_insight_card}
+            data-aos="fade-up"
+            data-aos-delay="1000"
           >
             <div
               className={newsAndInsights.news_and_insights_insight_card_date}

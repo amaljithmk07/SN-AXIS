@@ -118,6 +118,7 @@
 .news_and_insights_insight_card_img {
   height: 100%;
   width: 100%;
+  display: block;
   transition: all 0.3s ease-in-out;
 }
 .news_and_insights_insight_card_date {

@@ -231,11 +231,7 @@ const Index = () => {
             <div className={about.about_core_values_card_sec}>
               {/* /// */}
               {coreValues.map((data, index) => (
-                <div
-                  className={about.about_core_values_card_body}
-                  key={index}
-                  // data-aos="fade-up"
-                >
+                <div className={about.about_core_values_card_body} key={index}>
                   <div
                     className={`${about.about_core_values_card_title} font_playfair`}
                   >

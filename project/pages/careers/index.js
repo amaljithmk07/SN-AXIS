@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import careers from "@/styles/careers.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -8,6 +10,12 @@ const Index = () => {
   const router = useRouter();
   useEffect(() => {
     setLang(router.locale);
+    AOS.init();
+    const cards = document.querySelectorAll("[data-aos]");
+
+    cards.forEach((data, index) => {
+      data.setAttribute("data-aos-delay", index * 200);
+    });
   }, []);
   const [lang, setLang] = useState();
 
@@ -31,7 +39,7 @@ const Index = () => {
           </h2>
         </div>
         <div className={careers.careers_card_container}>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
@@ -79,7 +87,7 @@ const Index = () => {
               JOB DETAILS
             </Link>
           </div>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
@@ -127,7 +135,7 @@ const Index = () => {
               JOB DETAILS
             </Link>
           </div>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
@@ -175,7 +183,7 @@ const Index = () => {
               JOB DETAILS
             </Link>
           </div>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
@@ -223,7 +231,7 @@ const Index = () => {
               JOB DETAILS
             </Link>
           </div>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}
@@ -271,7 +279,7 @@ const Index = () => {
               JOB DETAILS
             </Link>
           </div>
-          <div className={careers.careers_card}>
+          <div className={careers.careers_card} data-aos="fade-up">
             {/* <img
               src="/images/bookmark.png"
               className={careers.careers_card_bookmark_img}

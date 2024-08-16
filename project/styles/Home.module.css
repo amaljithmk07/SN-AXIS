@@ -707,7 +707,7 @@
   .main_area_of_focus_title_sec > h2 {
     min-height: 60px;
     line-height: 45px;
-    font-size: 45px;
+    font-size: 40px;
     padding-bottom: 10px;
   }
 
@@ -727,7 +727,7 @@
   }
 
   .main_area_of_focus_card_title {
-    font-size: 18px;
+    font-size: 19px;
   }
   .main_area_of_focus_card_sec {
     width: 100%;
@@ -743,7 +743,7 @@
   }
   /*  */
   .main_news_and_insight_title > h2 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 45px;
   }
   .main_news_and_insight_card_btn_sec {

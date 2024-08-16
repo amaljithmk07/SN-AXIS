@@ -11,12 +11,10 @@ const Index = () => {
   const router = useRouter();
   useEffect(() => {
     setLang(router.locale);
+    AOS.init();
   }, []);
   const [lang, setLang] = useState();
 
-  useEffect(() => {
-    AOS.init();
-  });
   ///
 
   return (

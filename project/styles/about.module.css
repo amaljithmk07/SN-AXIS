@@ -525,7 +525,7 @@
   .about_core_values_container {
     padding-top: 10px;
   }
-
+  .about_our_mission_section_ar,
   .about_our_mission_section {
     margin-bottom: 50px;
   }
@@ -633,6 +633,7 @@
   }
   .about_core_values_card_title {
     font-size: 18px;
+    margin-top: 30px;
   }
   .about_core_values_card_content {
     font-size: 12px;

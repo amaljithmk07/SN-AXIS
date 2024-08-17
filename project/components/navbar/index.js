@@ -26,7 +26,7 @@ const Index = () => {
     setHamburger((prev) => !prev);
   };
 
-  ////Hamburger off for Li
+  ////Hamburger off for List
   const hambOff = () => {
     setHamburger(false);
   };
